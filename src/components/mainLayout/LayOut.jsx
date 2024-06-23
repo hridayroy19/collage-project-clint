@@ -1,12 +1,10 @@
-import { Outlet } from "react-router-dom";
-
 
 const LayOut = () => {
-    return (
-        <div>
-            <Outlet/>
-        </div>
-    );
+  return (
+    <div>
+      <p> hello </p>
+    </div>
+  );
 };
 
 export default LayOut;
