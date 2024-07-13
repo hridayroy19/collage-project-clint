@@ -1,7 +1,10 @@
+import UniversityCounter from "../components/homeComponents/UniversityNumber/UniversityCounter";
+
 const Home = () => {
     return (
-        <div className=" text-3xl text-center">
+        <div>
             <p>Home page setup</p>
+            <UniversityCounter/>
         </div>
     );
 };

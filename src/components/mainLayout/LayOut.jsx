@@ -1,6 +1,7 @@
 import Home from "../../pages/Home";
 import About from "../homeComponents/about/About";
 import Service from "../homeComponents/service/Service";
+import UniversityCounter from "../homeComponents/UniversityNumber/UniversityCounter";
 
 
 const LayOut = () => {
