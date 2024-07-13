@@ -5,7 +5,7 @@ import React, { Component } from "react";
 export class About extends Component {
   render() {
     return (
-      <div className="max-w-screen-2xl py-28 container mx-auto xl:px-14 px-4">
+      <div className="max-w-screen-2xl py-28 container mx-auto  px-4">
         <div className="hero">
           <div className="flex flex-col lg:flex-row justify-center gap-6 lg:gap-12">
             {/* image start */}
