@@ -12,7 +12,7 @@ const Service = () => {
       {/* card div servirce */}
      <div className="flex gap-9 justify-center">
      <section className=" h-screen flex justify-center items-center text-white">
-        <div className="w-[300px] h-[330px] bg-transparent cursor-pointer group perspective">
+        <div className="w-[300px] h-[230px] bg-transparent cursor-pointer group perspective">
           <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000">
             <div className="absolute w-full h-full backface-hidden">
               <img
@@ -20,6 +20,9 @@ const Service = () => {
                 className="w-full h-full object-cover"
                 alt="The King's Man"
               />
+              <div className=" bg-slate-300 py-2  px-2 text-black">
+              <h1> 01 jul , 2024</h1>
+              </div>
             </div>
             <div className="absolute my-rotate-y-180 w-full h-full bg-gray-100 backface-hidden overflow-hidden">
               <div className="text-center flex flex-col items-center justify-center h-full text-gray-800 px-2 pb-24">
