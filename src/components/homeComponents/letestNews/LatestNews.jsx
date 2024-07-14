@@ -2,7 +2,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const LatestNews = () => {
   return (
-    <div className="px-3 mb-20 md:px-5 xl:px-20  lg:px-7">
+    <div className="px-3 lg:mb-20 md:px-5 xl:px-20  lg:px-7">
       <div className="mb-8">
         <div className="flex items-center gap-4">
           <h3 className="text-2xl md:text-2xl font-thin">
