@@ -10,7 +10,7 @@ const Agreement = () => {
             ANNUAL PERFORMANCE AGREEMENTS <span className="font-bold"> |</span>
           </h3>
           <span className="text-sm flex items-center gap-3 md:text-base">
-            VIEW ALL NEWS <GoArrowRight />
+          View all APA <GoArrowRight />
           </span>
         </div>
       </div>
