@@ -6,23 +6,23 @@ import { MdLocationOn } from "react-icons/md";
 const ContactInfoMap = () => {
   return (
     <div className="px-4 py-6 md:px-10 md:py-9">
-      <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-10">
+      <div className="flex flex-col md:flex-row justify-center gap-6 md:gap-3">
         {/* First div */}
-        <div className="border px-6 py-4 md:px-11 md:py-6 flex flex-col gap-6">
+        <div className=" px-6 py-4 md:px-11 md:py-6 flex flex-col gap-6">
           <div className="flex gap-3 items-start">
-            <FaPhone className="text-xl md:text-2xl" /> 
+            <FaPhone className="text-xl md:text-2xl" />
             <span className="text-lg md:text-xl font-serif">
               Phone <br /> 01738211936
             </span>
           </div>
           <div className="flex gap-3 items-start">
-            <FaMessage className="text-xl md:text-2xl" /> 
+            <FaMessage className="text-xl md:text-2xl" />
             <span className="text-lg md:text-xl font-serif">
               Email <br /> hrhridoyroy@503gmail.com
             </span>
           </div>
           <div className="flex gap-3 items-start">
-            <FaAddressBook className="text-xl md:text-2xl" /> 
+            <FaAddressBook className="text-xl md:text-2xl" />
             <span className="text-lg md:text-xl font-serif">
               Location <br /> Aptouch Polytechinc Institute Dinajpur
             </span>
