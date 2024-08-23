@@ -6,7 +6,6 @@ import UniversityCounter from "../components/homeComponents/UniversityNumber/Uni
 const Home = () => {
   return (
     <div>
-      <p>Home page setup</p>
       <UniversityCounter />
       <About />
       <LatestNews />
