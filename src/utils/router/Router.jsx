@@ -3,6 +3,7 @@ import LayOut from "../../components/mainLayout/LayOut";
 import Home from "../../pages/Home";
 import Contact from "../../pages/contact/Contact";
 import Gallery from "../../pages/photoGellery/Gallery";
+import ComputerDepartment from "../../pages/department/computer/ComputerDepartment";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,11 @@ const router = createBrowserRouter([
           path:'gallery',
           element:<Gallery/>
         },
+        // design
+        {
+          path:'com',
+          element:<ComputerDepartment/>
+        }
       ]
     },
   ]);
