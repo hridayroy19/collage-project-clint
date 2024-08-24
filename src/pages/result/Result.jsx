@@ -2,18 +2,18 @@
 
 const Result = () => {
     return (
-        <div className=" mt-10 py-20 px-20">
-            <div className=" flex  px-4 justify-between items-start ">
+        <div className=" mt-10 py-20 xl:px-20 lg:px-8 px-4">
+            <div className=" lg:flex md:flex flex-row  px-4 justify-between items-start ">
 {/* banner */}
-<div className=" w-[400px] ">
+<div className=" lg:w-[400px] md:w-[900px] w-full ">
     <img src="https://i.ibb.co/NprMHYm/4081337.webp" className=" w-full" alt="" />
 </div>
 {/* result from */}
-<div className=" w-[400px] py-4   ">
+<div className=" lg:w-[400px] py-4   ">
     <h2 className=" text-4xl text-center  font-bold">
     Individual Results
     </h2>
-    <div className=" border bg-slate-100 shadow-md mt-5 px-7 py-6">
+    <div className=" rounded-lg bg-slate-100 shadow-md mt-5 px-7 py-6">
     <select className="select select-info w-full max-w-xs">
   <option disabled selected>Select language</option>
   <option>English</option>
