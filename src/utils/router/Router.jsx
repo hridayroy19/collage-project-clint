@@ -4,6 +4,7 @@ import Home from "../../pages/Home";
 import Contact from "../../pages/contact/Contact";
 import Gallery from "../../pages/photoGellery/Gallery";
 import ComputerDepartment from "../../pages/department/computer/ComputerDepartment";
+import Result from "../../pages/result/Result";
 
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
         {
           path:'gallery',
           element:<Gallery/>
+        },
+        {
+          path:'result',
+          element:<Result/>
         },
         // design
         {

@@ -19,7 +19,7 @@ const ComputerDepartment = () => {
         {/* fast div */}
         <div className=" lg:w-[900px] md:w-[720px] w-full  ">
           <h3 className=" text-4xl font-bold mb-8">
-            {" "}
+           
             Diploma In Computer Science Engineering Program Objective
           </h3>
           <p className=" text-xl text-black">
@@ -41,7 +41,7 @@ const ComputerDepartment = () => {
             </h3>
             <ul className="text-black text-xl">
               <li>
-                {" "}
+               
                 Minimum GPA of 2.00 and minimum SSC equivalent in any
                 discipline.
               </li>
