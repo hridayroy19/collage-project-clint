@@ -6,6 +6,7 @@ import Gallery from "../../pages/photoGellery/Gallery";
 import ComputerDepartment from "../../pages/department/computer/ComputerDepartment";
 import Result from "../../pages/result/Result";
 import Error from "../../sharedcomponents/Error";
+import Principal from "../../pages/administration/principal/Principal";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
         {
           path:'result',
           element:<Result/>
+        },
+        ,
+        {
+          path:'p',
+          element:<Principal/>
         },
         // design
         {
