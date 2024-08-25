@@ -5,12 +5,14 @@ import Contact from "../../pages/contact/Contact";
 import Gallery from "../../pages/photoGellery/Gallery";
 import ComputerDepartment from "../../pages/department/computer/ComputerDepartment";
 import Result from "../../pages/result/Result";
+import Error from "../../sharedcomponents/Error";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element:<LayOut/>,
+      errorElement:<Error/>,
       children:[
         {
           path:'/',
