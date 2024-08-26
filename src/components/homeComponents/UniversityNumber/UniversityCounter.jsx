@@ -5,7 +5,7 @@ const UniversityCounter = () => {
   return (
     <div className="min-h-screen flex items-center justify-center">
       <div
-        className="relative w-full bg-fixed bg-center bg-no-repeat bg-cover"
+        className="relative w-full  bg-center bg-no-repeat bg-cover"
         style={{
           backgroundImage: "url(https://i.ibb.co/GxRCjZN/Rectangle-27.png)",
         }}
