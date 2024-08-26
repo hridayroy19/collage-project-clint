@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "photo": "https://i.ibb.co/JR1xLNv/Unhelpful-High-School-Teacher-removebg-preview.png",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "department": "Computer",
+    "salary": 80000,
+    "experience": "10 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 2,
+    "photo": "https://i.ibb.co/rFSYnXb/20230409234326-IMG-7354-removebg-removebg-preview.png",
+    "name": "Jane Smith",
+    "email": "jane.smith@example.com",
+    "department": "Civil",
+    "salary": 75000,
+    "experience": "8 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 3,
+    "photo": "https://i.ibb.co/jknmLW6/istockphoto-1341346982-170667a.webp",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.com",
+    "department": "Mechanice",
+    "salary": 85000,
+    "experience": "12 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 4,
+    "photo": "https://via.placeholder.com/150",
+    "name": "Bob Brown",
+    "email": "bob.brown@example.com",
+    "department": "Textail",
+    "salary": 78000,
+    "experience": "9 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 5,
+    "photo": "https://via.placeholder.com/150",
+    "name": "Charlie Davis",
+    "email": "charlie.davis@example.com",
+    "department": " Electronice",
+    "salary": 82000,
+    "experience": "11 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 6,
+    "photo": "https://via.placeholder.com/150",
+    "name": "David Wilson",
+    "email": "david.wilson@example.com",
+    "department": "Mechanice",
+    "salary": 74000,
+    "experience": "7 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 7,
+    "photo": "https://via.placeholder.com/150",
+    "name": "Eva Martinez",
+    "email": "eva.martinez@example.com",
+    "department": "Development",
+    "salary": 86000,
+    "experience": "10 years",
+    "role": "Department Head"
+  },
+  {
+    "id": 8,
+    "photo": "https://via.placeholder.com/150",
+    "name": "Frank Harris",
+    "email": "frank.harris@example.com",
+    "department": "IT",
+    "salary": 83000,
+    "experience": "13 years",
+    "role": "Department Head"
+  }
+]
