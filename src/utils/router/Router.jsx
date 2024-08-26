@@ -7,6 +7,7 @@ import ComputerDepartment from "../../pages/department/computer/ComputerDepartme
 import Result from "../../pages/result/Result";
 import Error from "../../sharedcomponents/Error";
 import Principal from "../../pages/administration/principal/Principal";
+import DeparmnetHead from "../../pages/administration/deparmnetHead/DeparmnetHead";
 
 
 const router = createBrowserRouter([
@@ -33,8 +34,13 @@ const router = createBrowserRouter([
         },
         ,
         {
-          path:'p',
+          path:'principal',
           element:<Principal/>
+        },
+        ,
+        {
+          path:'deparmentHead',
+          element:<DeparmnetHead/>
         },
         // design
         {
