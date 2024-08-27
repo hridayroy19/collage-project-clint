@@ -20,7 +20,7 @@ const Gallery = () => {
   return (
     <div>
       {/* banner section*/}
-      <div className=" mb-10 w-full mt-44">
+      <div className=" mb-10 w-full ">
         <img
           src="https://i.ibb.co/0FWcGCS/fe458127812043-5636b276d6b43.jpg"
           className="w-full h-[45vh] object-cover"

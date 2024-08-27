@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const DeparmnetHead = () => {
   const [department, setDepartment] = useState([]);
-  console.log(department);
+  // console.log(department);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +24,7 @@ const DeparmnetHead = () => {
         {department?.map((teacher, id) => (
           <div
             key={id}
-            className="relative w-[320px] h-[350px] shadow-lg shadow-blue-400 border overflow-hidden"
+            className="relative w-[300px] h-[350px] shadow-lg shadow-blue-400 border overflow-hidden"
           >
             {/* Profile Section */}
             <div className="avatar flex justify-center mt-11">
