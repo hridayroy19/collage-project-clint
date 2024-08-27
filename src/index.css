@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-link {
+    @apply relative  transition-colors duration-300  ease-[cubic-bezier(0.25,0.8,0.25,1)] focus:outline-none;
+  }
+  
+   .nav-link::after {
+    content: "";
+    @apply absolute bottom-[-2px] left-1/2 w-0 h-[2px] bg-[#007bff] transition-all duration-300 ease-[cubic-bezier(0.25,0.8,0.25,1)];
+  } 
+  
+  .nav-link:hover::after
+   {
+    @apply w-full left-0;
+  }
