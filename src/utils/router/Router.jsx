@@ -32,19 +32,19 @@ const router = createBrowserRouter([
           path:'result',
           element:<Result/>
         },
-        ,
+// Adminstration
         {
           path:'principal',
           element:<Principal/>
         },
         ,
         {
-          path:'deparmentHead',
+          path:'deparmentHead/all',
           element:<DeparmnetHead/>
         },
-        // design
+// all department path section
         {
-          path:'com',
+          path:'computerDept',
           element:<ComputerDepartment/>
         }
       ]

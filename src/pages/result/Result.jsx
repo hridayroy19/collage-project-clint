@@ -7,7 +7,7 @@ const Result = () => {
           <img
             src="https://i.ibb.co/NprMHYm/4081337.webp"
             className=" w-full"
-            alt=""
+            alt="img"
           />
         </div>
         {/* result from */}
@@ -17,13 +17,13 @@ const Result = () => {
           </h2>
           <div className=" rounded-lg bg-slate-100 shadow-md mt-5 px-7 py-6">
             <select className="select  border-none select-info w-full max-w-xs">
-              <option selected>Diploma in Engineering</option>
+              <option  defaultValue={'diploma'}>Diploma in Engineering</option>
               <option>Diploma in Textail Engineering</option>
               <option>Diploma in Ecomarce</option>
             </select>
             {/* year */}
             <select className="select border-none mt-4 mb-3 select-info w-full max-w-xs">
-              <option selected> 2020</option>
+              <option defaultValue={'year'}> 2020</option>
               <option>2016</option>
               <option>2010</option>
             </select>
