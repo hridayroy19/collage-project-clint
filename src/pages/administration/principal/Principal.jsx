@@ -1,6 +1,6 @@
 const Principal = () => {
   return (
-    <div className=" py-24 xl:px-20 lg:px-10 md:px-10 px-5">
+    <div className=" py-10 xl:px-20 lg:px-10 md:px-10 px-5">
       <div className="text-center r">
         <h1 className=" lg:text-3xl text-xl font-serif   mb-2  ">
           Wellcome to Hridoy Roy 
@@ -10,7 +10,7 @@ const Principal = () => {
       {/* card */}
       <div className=" lg:flex justify-center items-end ">
         {/* image */}
-        <div className=" lg:mt-32 mb-10">
+        <div className=" lg:mt-20 mb-10">
           <img
             src="https://i.ibb.co/JR1xLNv/Unhelpful-High-School-Teacher-removebg-preview.png" className="flex mx-auto items-center w-full object-contain text-center"
             alt=""
