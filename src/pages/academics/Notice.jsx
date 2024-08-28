@@ -1,10 +1,10 @@
 const Notice = () => {
   return (
-    <div className=" px-24">
+    <div className=" xl:px-24 lg:px-10 md:px-7 px-4">
       {/* banner section */}
       <div className=" mt-11 ">
         <div className="flex justify-between  border items-center px-2  bg-white shadow-sm ">
-          <h1 className=" text-xl font-serif py-2 "> Important Notices </h1>
+          <h1 className=" lg:text-xl font-serif py-2 "> Important Notices </h1>
 
           <button className=" border-2 border-green-400 px-2 font-bold py-1 text-sm h-8 text-green-600 ">
             {" "}
@@ -15,9 +15,9 @@ const Notice = () => {
         {/* filter section */}
         <div className=" flex mt-11 gap-9 ">
           <button>
-            <select className="select select-bordered w-full max-w-xs">
-              <option disabled selected>
-                Who shot first?
+            <select className="select border-none w-full max-w-xs">
+              <option defaultValue={" date"}>
+                Date filter
               </option>
               <option>Han Solo</option>
               <option>Greedo</option>
@@ -25,11 +25,11 @@ const Notice = () => {
           </button>
           {/* button 2 nb */}
           <button className="  ">
-            <label className="input  flex items-center gap-2">
+            <label className="input border-none  flex items-center gap-2">
               <input type="text" className="grow" placeholder="Search" />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
+                viewBox="0 0 16 10"
                 fill="currentColor"
                 className="h-4 w-4 opacity-70"
               >
@@ -45,7 +45,8 @@ const Notice = () => {
       </div>
       {/* all notice */}
       <div className="mb-11 mt-9     ">
-        <h3 className="  text-xl font-serif"> All Notices</h3>
+        <h3 className="  lg:text-xl font-serif px-2"> All Notices</h3>
+        <hr className=" w-[10%] px-4 mt-3 " />
 
         {/* tabil sectio */}
 
