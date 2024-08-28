@@ -5,7 +5,6 @@ const Notice = () => {
       <div className=" mt-11 ">
         <div className="flex justify-between  border items-center px-2  bg-white shadow-sm ">
           <h1 className=" lg:text-xl font-serif py-2 "> Important Notices </h1>
-
           <button className=" border-2 border-green-400 px-2 font-bold py-1 text-sm h-8 text-green-600 ">
             {" "}
             Show all
@@ -57,7 +56,6 @@ const Notice = () => {
                 <td className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
                   John Doe
                 </td>
-
                 <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                   Web Developer
                 </td>
