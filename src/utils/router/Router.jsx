@@ -9,6 +9,7 @@ import Error from "../../sharedcomponents/Error";
 import Principal from "../../pages/administration/principal/Principal";
 import DeparmnetHead from "../../pages/administration/deparmnetHead/DeparmnetHead";
 import Notice from "../../pages/academics/Notice";
+import VicePrincipal from "../../pages/administration/vice_principale/VicePrincipal";
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         {
           path:'principal',
           element:<Principal/>
+        },
+        {
+          path:'viceprincipal',
+          element:<VicePrincipal/>
         },
         ,
         {
