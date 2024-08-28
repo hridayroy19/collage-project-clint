@@ -271,7 +271,7 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/notice"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
                   >
                     {" "}
@@ -432,7 +432,7 @@ const Navbar = () => {
                 to="/gallery"
                 className="hover:text-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
               >
-                Photo gallery
+                 gallery
               </NavLink>
             </li>
             <li id="aetive" className="max-lg:border-b max-lg:px-3 ">
