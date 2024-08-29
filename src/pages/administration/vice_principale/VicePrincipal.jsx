@@ -1,7 +1,7 @@
 const VicePrincipal = () => {
   return (
-    <div className=" py-10 xl:px-20 lg:px-10 md:px-10 px-5">
-      <h3 className=" text-2xl font-serif mb-14 text-center">
+    <div className=" py-10 xl:px-20 mb-14 lg:px-10 md:px-10 px-5">
+      <h3 className=" text-2xl text-green-500 font-serif mb-14 text-center">
         {" "}
         Vice Principal
       </h3>

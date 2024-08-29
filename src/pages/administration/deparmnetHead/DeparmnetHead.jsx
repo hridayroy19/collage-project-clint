@@ -24,7 +24,7 @@ const DeparmnetHead = () => {
         {department?.map((teacher, id) => (
           <div
             key={id}
-            className="relative lg:w-[300px] md:w-[330px] w-[350px] h-[350px] shadow-lg shadow-blue-400 border overflow-hidden"
+            className="relative lg:w-[300px] md:w-[330px] w-[350px] h-[350px] shadow-lg shadow-green-300 border overflow-hidden"
           >
             {/* Profile Section */}
             <div className="avatar flex justify-center mt-11">
@@ -51,7 +51,7 @@ const DeparmnetHead = () => {
               <svg
                 className="absolute bottom-0 w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="5 10  1200 320 "
+                viewBox="5 10  1400 320 "
               >
                 <path
                   fill="#007BFF"
