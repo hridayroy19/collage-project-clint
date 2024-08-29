@@ -5,7 +5,7 @@ const LatestNews = () => {
     <div className="px-3 lg:mb-20 md:px-5 xl:px-20  lg:px-7">
       <div className="mb-8">
         <div className="flex items-center gap-4">
-          <h3 className="text-2xl md:text-2xl font-thin">
+          <h3 className="text-2xl text-green-500 font-serif md:text-2xl font-thin">
             LATEST NEWS <span className="font-bold"> |</span>
           </h3>
           <span className="text-sm flex items-center gap-3 md:text-base">
@@ -34,7 +34,7 @@ const LatestNews = () => {
             repellat libero voluptas labore sunt, assumenda quam, esse,
             reiciendis numquam necessitatibus!
           </p>
-          <button className="mt-4 font-serif text-[16px] border-none group relative">
+          <button className="mt-4 font-serif text-green-500 text-[16px] border-none group relative">
             READ MORE
             <div className="overflow-hidden mt-1">
               <div className="h-1 w-0 bg-blue-500 transition-all duration-500 ease-in-out group-hover:w-full"></div>
@@ -63,7 +63,7 @@ const LatestNews = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nam
               illo consequuntur nemo minima mollitia
             </p>
-            <button className="mt-4  font-serif text-[16px] border-none group relative">
+            <button className="mt-4 text-green-500  font-serif text-[16px] border-none group relative">
               READ MORE
               <div className="overflow-hidden mt-1">
                 <div className="h-1 w-0 bg-blue-500 transition-all duration-500 ease-in-out group-hover:w-full"></div>
@@ -90,7 +90,7 @@ const LatestNews = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nam
               illo consequuntur nemo minima mollitia
             </p>
-            <button className="mt-4 font-serif text-[16px] border-none group relative">
+            <button className="mt-4 text-green-500 font-serif text-[16px] border-none group relative">
               READ MORE
               <div className="overflow-hidden mt-1">
                 <div className="h-1 w-0 bg-blue-500 transition-all duration-500 ease-in-out group-hover:w-full"></div>
@@ -117,7 +117,7 @@ const LatestNews = () => {
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad nam
               illo consequuntur nemo minima mollitia
             </p>
-            <button className="mt-4 font-serif text-[16px] border-none group relative">
+            <button className="mt-4 text-green-500 font-serif text-[16px] border-none group relative">
               READ MORE
               <div className="overflow-hidden mt-1">
                 <div className="h-1 w-0 bg-blue-500 transition-all duration-500 ease-in-out group-hover:w-full"></div>

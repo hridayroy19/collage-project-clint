@@ -7,7 +7,7 @@ import { MdLocationOn } from "react-icons/md";
 const Footer = () => {
   return ( 
     <div>
-      <footer className="bg-[#000000f1] text-white font-serif ">
+      <footer className="bg-green-500 text-base font-serif ">
         <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
@@ -15,7 +15,7 @@ const Footer = () => {
                 <img src="https://i.ibb.co/W0XbzwM/logo-1.png" alt="" />
               </div>
 
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
+              <p className="mt-6 max-w-md text-center leading-relaxed  sm:max-w-xs sm:text-left">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Incidunt consequuntur amet culpa cum itaque neque.
               </p>
@@ -141,7 +141,7 @@ const Footer = () => {
                 <ul className="mt-8 space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Company History
@@ -150,7 +150,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Meet the Team
@@ -159,7 +159,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Employee Handbook
@@ -168,7 +168,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       {" "}
@@ -186,7 +186,7 @@ const Footer = () => {
                 <ul className="mt-8 space-y-4 text-sm">
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Architecture Engineering
@@ -195,7 +195,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Civil engineering
@@ -203,7 +203,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Computer Engineering
@@ -212,7 +212,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Electrical Engineering
@@ -221,7 +221,7 @@ const Footer = () => {
 
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Mechanical Engineering
@@ -229,7 +229,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      className="text-gray-700 transition hover:text-gray-700/75"
+                      className=" transition hover:/75"
                       href="#"
                     >
                       Textile Engineeringng
@@ -251,7 +251,7 @@ const Footer = () => {
                     >
                       <FaMessage />
 
-                      <span className="flex-1 text-gray-700">
+                      <span className="flex-1 ">
                         Email: api.dnj@gmail.com
                       </span>
                     </a>
@@ -264,7 +264,7 @@ const Footer = () => {
                     >
                       <FaPhone />
 
-                      <span className="flex-1 text-gray-700">
+                      <span className="flex-1 ">
                         {" "}
                         +880 2589-922005
                       </span>
@@ -277,7 +277,7 @@ const Footer = () => {
                     >
                       <BsBrowserChrome />
 
-                      <span className="flex-1 text-gray-700">
+                      <span className="flex-1 ">
                         www.api.edu.bd/
                       </span>
                     </a>
@@ -285,7 +285,7 @@ const Footer = () => {
 
                   <li className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                     <MdLocationOn />
-                    <h3 className="-mt-0.5 flex-1 not-italic text-gray-700">
+                    <h3 className="-mt-0.5 flex-1 not-italic ">
                       Aptouch Polytechnic Institute Nayanpur, Sadar
                       Dinajpur-5200.
                     </h3>
@@ -296,7 +296,7 @@ const Footer = () => {
           </div>
           <div className="mt-12 border-t border-gray-100 pt-6">
             <div className="text-center sm:flex sm:justify-between sm:text-left">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm ">
                 <span className="block sm:inline">All rights reserved.</span>
                 <a
                   className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
@@ -312,7 +312,7 @@ const Footer = () => {
                   Privacy Policy
                 </a>
               </p>
-              <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+              <p className="mt-4 text-sm  sm:order-first sm:mt-0">
                 &copy; 2025 Company HR DEV
               </p>
             </div>

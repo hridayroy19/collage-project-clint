@@ -25,7 +25,7 @@ export class About extends Component {
               </div>
             </div>
             <div className="px-8 lg:px-0 lg:w-[85%]">
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-mono font-bold mb-4 text-center">
+              <h1 className="text-xl text-green-500 md:text-2xl lg:text-3xl font-mono font-bold mb-4 text-center">
                 W E L C O M E TO
               </h1>
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center">
