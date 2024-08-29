@@ -33,7 +33,7 @@ const Result = () => {
               className="input  border-none     input-bordered w-full max-w-xs"
             />
             {/* button */}
-            <button className="btn mt-4 bg-blue-600 text-white font-bold w-full max-w-xs ">
+            <button className="btn mt-4 bg-green-500 text-white font-bold w-full max-w-xs ">
               Wiew Result
             </button>
           </div>

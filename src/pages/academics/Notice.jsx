@@ -4,7 +4,10 @@ const Notice = () => {
       {/* banner section */}
       <div className=" mt-11 ">
         <div className="flex justify-between  border items-center px-2  bg-white shadow-sm ">
-          <h1 className=" lg:text-xl font-serif py-2 "> Important Notices </h1>
+          <h1 className=" lg:text-2xl font-serif text-green-500 py-2 ">
+            {" "}
+            Important Notices{" "}
+          </h1>
           <button className=" border-2 border-green-400 px-2 font-bold py-1 text-sm h-8 text-green-600 ">
             {" "}
             Show all
@@ -15,9 +18,7 @@ const Notice = () => {
         <div className=" flex mt-11 gap-9 ">
           <button>
             <select className="select border-none w-full max-w-xs">
-              <option defaultValue={" date"}>
-                Date filter
-              </option>
+              <option defaultValue={" date"}>Date filter</option>
               <option>Han Solo</option>
               <option>Greedo</option>
             </select>
@@ -44,7 +45,10 @@ const Notice = () => {
       </div>
       {/* all notice */}
       <div className="mb-11 mt-9     ">
-        <h3 className="  lg:text-xl font-serif px-2"> All Notices</h3>
+        <h3 className="  lg:text-xl font-serif text-green-500 px-2">
+          {" "}
+          All Notices
+        </h3>
         <hr className=" w-[10%] px-4 mt-3 " />
 
         {/* tabil sectio */}

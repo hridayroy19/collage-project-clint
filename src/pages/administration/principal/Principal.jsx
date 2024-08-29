@@ -12,8 +12,8 @@ const Principal = () => {
         {/* image */}
         <div className=" lg:mt-20 mb-10">
           <img
-            src="https://i.ibb.co/JR1xLNv/Unhelpful-High-School-Teacher-removebg-preview.png"
-            className="flex mx-auto items-center w-full object-contain text-center"
+            src="https://i.ibb.co/rFSYnXb/20230409234326-IMG-7354-removebg-removebg-preview.png"
+            className="flex mx-auto items-center lg:w-[75%] w-full object-contain text-center"
             alt=""
           />
         </div>
