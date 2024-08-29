@@ -91,8 +91,8 @@ const Navbar = () => {
         <button className="bg-red-500 text-white px-4 py-3 font-bold">
           খবর
         </button>
-        <span className=" w-[90%] py-3">
-          <Marquee speed="40" pauseOnHover className="text-red-500">
+        <span className=" w-[93%] py-3">
+          <Marquee speed="40" pauseOnHover className=" text-gray-700 font-serif">
             সাইটের আপডেট এর কাজ চলমান রয়েছে। তার জন্য দুঃখ প্রকাশ করছি আমরা ||
             এ্যাপটাচ পলিটেকনিক ইনস্টিটিউট এর অফিসিয়াল ওয়েবসাইটে আপনাকে স্বাগতম |
           </Marquee>
@@ -148,7 +148,7 @@ const Navbar = () => {
             >
               <NavLink
                 to="/"
-                className="hover:text-[#007bff] text-gray-600  uppercase nav-link font-semibold block text-[15px]"
+                className="hover:text-[#007bff] text-gray-700 font-serif  uppercase nav-link font-semibold block text-[15px]"
               >
                 Home
               </NavLink>
@@ -161,7 +161,7 @@ const Navbar = () => {
               <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
-                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
                 Administration
                 <svg
@@ -182,7 +182,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     board of directcrs
@@ -191,7 +191,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="/principal"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     principal
@@ -199,8 +199,8 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    to="/viceprincipal"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     vice-principal
@@ -209,7 +209,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="/deparmentHead/all"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Department Head
@@ -218,7 +218,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     employees
@@ -227,7 +227,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     instructor
@@ -242,7 +242,7 @@ const Navbar = () => {
               <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
-                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
                Academics
                 <svg
@@ -263,7 +263,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     admission
@@ -271,8 +271,8 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    to="/notice"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     notice 
@@ -281,7 +281,7 @@ const Navbar = () => {
                   <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     online class
@@ -290,7 +290,7 @@ const Navbar = () => {
                   <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     class routine
@@ -305,7 +305,7 @@ const Navbar = () => {
               <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
-                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
                 Database
                 <svg
@@ -326,7 +326,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     student
@@ -335,7 +335,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     teachers
@@ -349,7 +349,7 @@ const Navbar = () => {
               <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
-                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
                 Deparment
                 <svg
@@ -370,7 +370,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Electrical
@@ -382,7 +382,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="/computerDept"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Computer
@@ -391,7 +391,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Civil
@@ -400,7 +400,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Mechanical
@@ -409,7 +409,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Power
@@ -418,7 +418,7 @@ const Navbar = () => {
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
-                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-600 font-semibold text-[15px] block"
+                    className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
                     Architecture
@@ -430,15 +430,15 @@ const Navbar = () => {
             <li id="aetive" className="max-lg:border-b max-lg:px-3 max-lg:py-3">
               <NavLink
                 to="/gallery"
-                className="hover:text-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
-                Photo gallery
+                 gallery
               </NavLink>
             </li>
             <li id="aetive" className="max-lg:border-b max-lg:px-3 ">
               <NavLink
                 to="/result"
-                className="hover:text-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
                 Result
               </NavLink>
@@ -447,7 +447,7 @@ const Navbar = () => {
             <li id="aetive" className="max-lg:border-b max-lg:px-3 ">
               <NavLink
                 to="/contact"
-                className="hover:text-[#007bff] text-gray-600 font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
                 Contact
               </NavLink>

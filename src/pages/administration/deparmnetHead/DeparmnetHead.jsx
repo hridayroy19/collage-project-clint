@@ -19,12 +19,12 @@ const DeparmnetHead = () => {
   }, []);
 
   return (
-    <div className="py-24 xl:px-20 lg:px-7 md:px-10  px-6">
-      <div className=" grid lg:grid-cols-3 md:grid-cols-2 justify-center gap-8">
+    <div className="py-24 xl:px-16 lg:px-7 md:px-10  px-6">
+      <div className=" w-full grid xl:lg:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 justify-center gap-8">
         {department?.map((teacher, id) => (
           <div
             key={id}
-            className="relative w-[300px] h-[350px] shadow-lg shadow-blue-400 border overflow-hidden"
+            className="relative lg:w-[300px] md:w-[330px] w-[350px] h-[350px] shadow-lg shadow-blue-400 border overflow-hidden"
           >
             {/* Profile Section */}
             <div className="avatar flex justify-center mt-11">
