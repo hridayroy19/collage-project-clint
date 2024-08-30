@@ -11,6 +11,7 @@ import DeparmnetHead from "../../pages/administration/deparmnetHead/DeparmnetHea
 import Notice from "../../pages/academics/Notice";
 import VicePrincipal from "../../pages/administration/vice_principale/VicePrincipal";
 import Civil from "../../pages/department/civil/Civil";
+import Mechanical from "../../pages/department/mechanical/Mechanical";
 
 
 const router = createBrowserRouter([
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
         {
           path:'computerDept',
           element:<ComputerDepartment/>
+        },  
+        {
+          path:'mechanical',
+          element:<Mechanical/>
         },
         // academics nav
         {
