@@ -15,9 +15,9 @@ const Civil = () => {
       </div>
       {/* text section */}
 
-      <div className=" mb-20 main lg:flex flex-row lg:px-12 md:px-9 px-3 justify-between gap-7 w-full ">
+      <div className=" mb-20 main lg:flex flex-row lg:px-8 md:px-9 px-3 justify-between gap-7 w-full ">
         {/* fast div */}
-        <div className=" lg:w-[900px] md:w-[720px] w-full  ">
+        <div className=" lg:w-[900px] md:w-[720px] lg:px-2 w-full  ">
           <h3 className=" text-4xl font-bold mb-8">
             Diploma In Civil Engineering Program Objective
           </h3>

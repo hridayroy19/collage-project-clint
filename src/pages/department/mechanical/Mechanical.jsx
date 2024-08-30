@@ -15,9 +15,9 @@ const Mechanical = () => {
       </div>
       {/* text section */}
 
-      <div className=" mb-20 main lg:flex flex-row lg:px-12 md:px-9 px-3 justify-between gap-7 w-full ">
+      <div className=" mb-20 main lg:flex flex-row lg:px-8 md:px-9 px-3 justify-between gap-7 w-full ">
         {/* fast div */}
-        <div className=" lg:w-[900px] md:w-[720px] w-full  ">
+        <div className=" lg:w-[900px] md:w-[720px] w-full lg:px-2 ">
           <h3 className=" text-4xl font-bold mb-8">
             Diploma In Mechanical Engineering Program Objective
           </h3>
