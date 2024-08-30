@@ -5,7 +5,7 @@ const VicePrincipal = () => {
         {" "}
         Vice Principal
       </h3>
-      <div className=" lg:flex md:flex gap-10 items-start  ">
+      <div className=" lg:flex md:flex justify-center gap-10 items-start  ">
         <div>
           <img
             src="https://i.ibb.co/9TTqD1P/premium-photo-1682089789852-e3023ff6df24.jpg"

@@ -15,24 +15,23 @@ const ComputerDepartment = () => {
       </div>
       {/* text section */}
 
-      <div className=" mb-20 main lg:flex flex-row lg:px-12 md:px-9 px-3 justify-between gap-7 w-full ">
+      <div className=" mb-20 main lg:flex flex-row lg:px-8 md:px-9 px-3 justify-between items-start w-full ">
         {/* fast div */}
-        <div className=" lg:w-[900px] md:w-[720px] w-full  ">
+        <div className=" lg:w-[900px] md:w-[720px] lg:px-2  w-full  ">
           <h3 className=" text-4xl font-bold mb-8">
-           
             Diploma In Computer Science Engineering Program Objective
           </h3>
-          <p className=" text-xl text-black">
+          <p className="  text-xl text-black">
             The Department of Computer science and technology was established in
             2002. In important fields of computer science, the department is a
-            leading academic hub for advanced research and breakthroughs. This
-            has been made possible by highly skilled, experienced, and driven
+            leading academic hub for advanced research breakthroughs. This has
+            been made possible by highly skilled, experienced, and driven
             faculty who use unique and new teaching strategies to transmit to
-            students the ideal balance of academic and practical knowledge. The
-            Department makes sure to produce engineers in computers who have a
-            strong interest in solving problems, who are adaptable and
-            productive at work, and who make significant contributions to the
-            field’s advancements.
+            students the ideal balance of academic and knowledge. The Department
+            makes sure to produce engineers in computers who have a strong
+            interest in solving problems, who are adaptable and productive at
+            work, and who make significant contributions to the field’s
+            advancements.
           </p>
           {/* Eligibility */}
           <div className=" mt-6">
@@ -41,7 +40,6 @@ const ComputerDepartment = () => {
             </h3>
             <ul className="text-black text-xl">
               <li>
-               
                 Minimum GPA of 2.00 and minimum SSC equivalent in any
                 discipline.
               </li>
@@ -78,46 +76,59 @@ const ComputerDepartment = () => {
             </ul>
           </div>
         </div>
+
         {/* secton div */}
-        <div className=" lg:w-[350px] mt-4 border ">
-          <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm">
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-              className="h-56 w-full object-cover"
-            />
-
-            <div className="p-4 sm:p-6">
-              <a href="#">
-                <h3 className="text-lg font-medium text-gray-900">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h3>
-              </a>
-
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Recusandae dolores, possimus pariatur animi temporibus nesciunt
-                praesentium dolore sed nulla ipsum eveniet corporis quidem,
-                mollitia itaque minus soluta, voluptates neque explicabo tempora
-                nisi culpa eius atque dignissimos. Molestias explicabo corporis
-                voluptatem?
-              </p>
-
-              <a
-                href="#"
-                className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
-              >
-                Find out more
-                <span
-                  aria-hidden="true"
-                  className="block transition-all group-hover:ms-0.5 rtl:rotate-180"
-                >
-                  &rarr;
-                </span>
-              </a>
+        <div className=" lg:w-[340px] mt-4  ">
+          <div className="  ">
+            <h1 className=" text-3xl font-serif">Important link :</h1>
+            <div className=" text-xl underline font-serif">
+              <p className=" mt-3 mb-3 ">Success Full Store</p>
+              <p> Career Counseling</p>
             </div>
-          </article>
+          </div>
+          {/* open admision  */}
+          <div className=" mt-9 flex justify-center items-center">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/011/746/756/non_2x/admission-open-now-banner-with-megaphone-speaker-vector.jpg"
+              className="lg:w-full md:w-[550px] md:h-[420px] object-cover h-[250px] w-full  lg:h-[270px] "
+              alt="img"
+            />
+          </div>
+          {/* video< */}
+
+          <div className="mt-5 lg:w-full mx-auto md:w-[550px]  ">
+            <div className="relative h-0 pb-[56.25%]">
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/ti-O-Ewc0oE"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div>
+            <div className=" group relative mt-6  flex justify-center">
+              <a
+                href="https://www.facebook.com/aptouch.polytechnic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt9np8vnMCJM0vQEQNicf3MWSwi_YAFiJv5g&s"
+                  alt="Follow us on Facebook"
+                  className="lg:w-[340px] md:w-[550px] md:h-[420px] object-cover h-[250px] w-[380px]  lg:h-[270px]"
+                />
+              </a>
+              <span className="absolute -top-7 left-[50%] text-2xl -translate-x-[50%] z-20 origin-left scale-0 px-2 rounded-lg border border-gray-300 bg-white py-1  font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
+                Facebook<span></span>
+              </span>
+            </div>
+          </div>
         </div>
+        {/* closc */}
       </div>
     </div>
   );
