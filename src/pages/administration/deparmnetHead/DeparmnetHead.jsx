@@ -7,7 +7,7 @@ const DeparmnetHead = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/public/deparment.json");
+        const response = await fetch("/deparment.json");
         const data = await response.json();
         setDepartment(data);
       } catch (error) {
@@ -18,9 +18,12 @@ const DeparmnetHead = () => {
     fetchData(); // Call the fetchData function
   }, []);
 
+
+
   return (
-    <div className="py-24 xl:px-16 lg:px-7 md:px-10  px-6">
-      <div className=" w-full grid xl:lg:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 justify-center gap-8">
+    <div className=" py-8 xl:px-16 lg:px-7 md:px-10  px-6">
+      <h1 className=" text-center font-serif text-3xl  text-green-500 mb-8"> All Department Head </h1>
+      <div className=" lg:mb-9 mb-4 w-full grid xl:lg:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 justify-center gap-8">
         {department?.map((teacher, id) => (
           <div
             key={id}

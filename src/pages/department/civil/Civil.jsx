@@ -1,13 +1,13 @@
 import React from "react";
 
-const ComputerDepartment = () => {
+const Civil = () => {
   return (
     <div>
       {/* banner section */}
       <div>
         <div className=" mb-10 w-full">
           <img
-            src="https://i.ibb.co/SJL7jVH/computing-banner-1500x430.jpg"
+            src="https://images.ctfassets.net/8bbwomjfix8m/3khjUHELqiZJVgdkpXSAZf/17faf9504845ad605296527fa90d8993/civil.jpg?fit=fill&w=1440&h=400&q=80&fm=jpg"
             className="w-full h-[45vh] object-cover"
             alt=""
           />
@@ -15,24 +15,44 @@ const ComputerDepartment = () => {
       </div>
       {/* text section */}
 
-      <div className=" mb-20 main lg:flex flex-row lg:px-8 md:px-9 px-3 justify-between items-start w-full ">
+      <div className=" mb-20 main lg:flex flex-row lg:px-8 md:px-9 px-3 justify-between gap-7 w-full ">
         {/* fast div */}
-        <div className=" lg:w-[900px] md:w-[720px] lg:px-2  w-full  ">
+        <div className=" lg:w-[900px] md:w-[720px] lg:px-2 w-full  ">
           <h3 className=" text-4xl font-bold mb-8">
-            Diploma In Computer Science Engineering Program Objective
+            Diploma In Civil Engineering Program Objective
           </h3>
-          <p className="  text-xl text-black">
-            The Department of Computer science and technology was established in
-            2002. In important fields of computer science, the department is a
-            leading academic hub for advanced research breakthroughs. This has
-            been made possible by highly skilled, experienced, and driven
-            faculty who use unique and new teaching strategies to transmit to
-            students the ideal balance of academic and knowledge. The Department
-            makes sure to produce engineers in computers who have a strong
-            interest in solving problems, who are adaptable and productive at
-            work, and who make significant contributions to the field’s
-            advancements.
+          <p className=" text-xl text-black">
+            Civil Engineering is the oldest and broadest of the traditional
+            engineering professions. Civil engineers build the world’s
+            infrastructure. In doing so, they quietly shape the history of
+            nations around the world. Most people cannot imagine life without
+            the many contributions of civil engineers to the public’s health,
+            safety and standard of living. It is devoted to the improvement of
+            the human Environment for the purposes of making our activities
+            productive, safe, and enjoyable, while providing aesthetically
+            pleasing surroundings. The civil engineer plans, designs, constructs
+            and maintains physical works and facilities that are deemed
+            essential to modern life. Civil engineering focuses on the
+            infrastructure of the world which include Water works, Sewers, Dams,
+            Power Plants, Transmission Towers/Lines, Railroads, Highways,
+            Bridges, Tunnels, Irrigation Canals, River Navigation, Shipping
+            Canals, Traffic Control, Mass Transit, Airport Runways, Terminals,
           </p>
+
+          <div className=" mt-6">
+            <h1 className=" text-3xl font-bold mb-5">
+              Course duration and assessment
+            </h1>
+            <p className="text-black text-xl ">
+              A semester is of 16 weeks duration, there are two semesters in a
+              year and duration of the program is four years. Diploma program
+              consisting of 8 semester (1 semester= 6 months). The Bangladesh
+              Technical Education Board is a state regulatory board responsible
+              for monitoring and developing technical and vocational education.
+              All the final exam and practical are conducted under the
+              supervision of BTEB.
+            </p>
+          </div>
           {/* Eligibility */}
           <div className=" mt-6">
             <h3 className=" text-3xl font-bold mb-5">
@@ -67,16 +87,14 @@ const ComputerDepartment = () => {
           <div className=" mt-6">
             <h3 className=" text-3xl font-bold mb-5">Lab facilitie</h3>
             <ul className="text-black text-xl">
-              <li>Software lab</li>
-              <li className=" mt-1 mb-1">Hardware lab</li>
-              <li> PLC lab</li>
-              <li>Networking lab</li>
-              <li>Electrical Machine lab</li>
-              <li>Industrial Electronics Lab</li>
+              <li>Materials Lab</li>
+              <li className=" mt-1 mb-1">Geotechnical Lab</li>
+              <li> Computer Lab</li>
+              <li>Construction Lab</li>
+              <li>Surveying Labb</li>
             </ul>
           </div>
         </div>
-
         {/* secton div */}
         <div className=" lg:w-[340px] mt-4  ">
           <div className="  ">
@@ -134,4 +152,4 @@ const ComputerDepartment = () => {
   );
 };
 
-export default ComputerDepartment;
+export default Civil;

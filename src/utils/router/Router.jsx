@@ -10,6 +10,9 @@ import Principal from "../../pages/administration/principal/Principal";
 import DeparmnetHead from "../../pages/administration/deparmnetHead/DeparmnetHead";
 import Notice from "../../pages/academics/Notice";
 import VicePrincipal from "../../pages/administration/vice_principale/VicePrincipal";
+import Civil from "../../pages/department/civil/Civil";
+import Mechanical from "../../pages/department/mechanical/Mechanical";
+import Electrical from "../../pages/department/electrical/Electrical";
 
 
 const router = createBrowserRouter([
@@ -50,8 +53,21 @@ const router = createBrowserRouter([
         },
 // all department path section
         {
+          path:'civil',
+          element:<Civil/>
+        },
+        {
           path:'computerDept',
           element:<ComputerDepartment/>
+        },  
+        {
+          path:'mechanical',
+          element:<Mechanical/>
+        },
+        ,  
+        {
+          path:'electrical',
+          element:<Electrical/>
         },
         // academics nav
         {

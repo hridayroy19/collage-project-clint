@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export class About extends Component {
   render() {
     return (
-      <div className="px-3 md:px-5 xl:px-20 lg:px-7 mb-11">
+      <div className="px-3 md:px-5 xl:px-24 xl:mb-24 lg:mb-16 mb-5 lg:px-7 ">
         <div className="hero">
           <div className="flex flex-col lg:flex-row justify-center gap-6 lg:gap-12">
             {/* Image start */}
@@ -24,7 +24,7 @@ export class About extends Component {
                 </div>
               </div>
             </div>
-            <div className="px-8 lg:px-0 lg:w-[85%]">
+            <div className="lg:w-[85%]">
               <h1 className="text-xl text-green-500 md:text-2xl lg:text-3xl font-mono font-bold mb-4 text-center">
                 W E L C O M E TO
               </h1>
