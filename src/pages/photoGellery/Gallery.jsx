@@ -6,7 +6,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/public/imag.json");
+        const response = await fetch("/imag.json");
         const data = await response.json();
         setImage(data);
       } catch (error) {
