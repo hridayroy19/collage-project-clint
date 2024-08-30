@@ -10,6 +10,7 @@ import Principal from "../../pages/administration/principal/Principal";
 import DeparmnetHead from "../../pages/administration/deparmnetHead/DeparmnetHead";
 import Notice from "../../pages/academics/Notice";
 import VicePrincipal from "../../pages/administration/vice_principale/VicePrincipal";
+import Civil from "../../pages/department/civil/Civil";
 
 
 const router = createBrowserRouter([
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
           element:<DeparmnetHead/>
         },
 // all department path section
+        {
+          path:'civil',
+          element:<Civil/>
+        },
         {
           path:'computerDept',
           element:<ComputerDepartment/>
