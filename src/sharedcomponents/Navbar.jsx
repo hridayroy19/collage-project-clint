@@ -390,7 +390,7 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/civil"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
