@@ -12,6 +12,7 @@ import Notice from "../../pages/academics/Notice";
 import VicePrincipal from "../../pages/administration/vice_principale/VicePrincipal";
 import Civil from "../../pages/department/civil/Civil";
 import Mechanical from "../../pages/department/mechanical/Mechanical";
+import Electrical from "../../pages/department/electrical/Electrical";
 
 
 const router = createBrowserRouter([
@@ -62,6 +63,11 @@ const router = createBrowserRouter([
         {
           path:'mechanical',
           element:<Mechanical/>
+        },
+        ,  
+        {
+          path:'electrical',
+          element:<Electrical/>
         },
         // academics nav
         {
