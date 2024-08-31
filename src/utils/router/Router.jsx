@@ -13,6 +13,8 @@ import VicePrincipal from "../../pages/administration/vice_principale/VicePrinci
 import Civil from "../../pages/department/civil/Civil";
 import Mechanical from "../../pages/department/mechanical/Mechanical";
 import Electrical from "../../pages/department/electrical/Electrical";
+import Database from "../../pages/databasc/Database";
+import FristSemister from "../../pages/databasc/studentData/first_semister/FristSemister";
 
 
 const router = createBrowserRouter([
@@ -73,6 +75,31 @@ const router = createBrowserRouter([
         {
           path:"notice",
           element:<Notice/>
+        },
+
+        // student database
+        {
+          path:'/student',
+          element:<Database/>,
+          children:[{
+            path:"firstSemister",
+            element:<FristSemister/>
+          },
+          {
+            path:"secondSemister",
+            element:<FristSemister/>
+          },
+          {
+            path:"thirdSemister",
+            element:<FristSemister/>
+          },
+          {
+            path:"fourSemister",
+            element:<FristSemister/>
+          },
+        
+        
+        ]
         }
       ]
     },
