@@ -346,7 +346,7 @@ const Navbar = () => {
                     <ul className="absolute lg:left-[150px] left-[100px] w-[180px]  lg:w-[220px] px-5 top-5 mt-2 bg-green-500  border border-gray-300 shadow-lg">
                       <li id="aetive" className="uppercase border-b py-3">
                         <NavLink
-                          to="student/firstSemister"
+                          to="database/firstSemister"
                           className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                         >
                           {" "}
@@ -355,7 +355,7 @@ const Navbar = () => {
                       </li>
                       <li id="aetive" className="uppercase border-b py-3">
                         <NavLink
-                          to="student/secondSemister"
+                          to="database/secondSemister"
                           className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                         >
                           {" "}
@@ -364,7 +364,7 @@ const Navbar = () => {
                       </li>
                       <li id="aetive" className="uppercase border-b py-3">
                         <NavLink
-                          to="student/thirdSemister"
+                          to="database/thirdSemister"
                           className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                         >
                           {" "}
@@ -373,7 +373,7 @@ const Navbar = () => {
                       </li>
                       <li id="aetive" className="uppercase border-b py-3">
                         <NavLink
-                          to="student/fourSemister"
+                          to="database/fourSemister"
                           className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                         >
                           {" "}
@@ -403,7 +403,7 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/database/alTeacher"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
@@ -483,7 +483,7 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/architechar"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}

@@ -15,6 +15,8 @@ import Mechanical from "../../pages/department/mechanical/Mechanical";
 import Electrical from "../../pages/department/electrical/Electrical";
 import Database from "../../pages/databasc/Database";
 import FristSemister from "../../pages/databasc/studentData/first_semister/FristSemister";
+import TeacherData from "../../pages/databasc/teacher_all/TeacherData";
+import Architechar from "../../pages/department/architechar/Architechar";
 
 
 const router = createBrowserRouter([
@@ -71,6 +73,11 @@ const router = createBrowserRouter([
           path:'electrical',
           element:<Electrical/>
         },
+        ,  
+        {
+          path:'architechar',
+          element:<Architechar/>
+        },
         // academics nav
         {
           path:"notice",
@@ -79,7 +86,7 @@ const router = createBrowserRouter([
 
         // student database
         {
-          path:'/student',
+          path:'/database',
           element:<Database/>,
           children:[{
             path:"firstSemister",
@@ -97,6 +104,11 @@ const router = createBrowserRouter([
             path:"fourSemister",
             element:<FristSemister/>
           },
+          // teacher
+          {
+            path:"alTeacher",
+            element:<TeacherData/>
+          }
         
         
         ]
