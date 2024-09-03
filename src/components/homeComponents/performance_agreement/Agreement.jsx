@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const Agreement = () => {
   return (
-    <div className="px-3 mb-20 md:px-5 xl:px-20 lg:mt-24 lg:px-7">
+    <div className="px-3  md:px-5 xl:px-20 lg:mt-24 lg:px-7">
       <div className="mb-8">
         <div className="flex items-center gap-4">
           <h3 className="text-2xl text-green-500 md:text-2xl font-serif">
