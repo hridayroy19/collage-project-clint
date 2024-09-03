@@ -32,6 +32,8 @@ const Navbar = () => {
     };
   }, []);
 
+  const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
+
   return (
     <header className="shadow-md bg-white font-[sans-serif] tracking-wide relative z-50">
       {/* top header section */}
@@ -53,7 +55,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
             >
               <button className=" text-3xl text-blue-500">
-              <FaFacebook />
+                <FaFacebook />
               </button>
               <span className="absolute -top-7 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-2 rounded-lg border border-gray-300 bg-white py-1 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
                 Facebook<span></span>
@@ -67,7 +69,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
             >
               <button className=" text-2xl  text-black">
-              <FaXTwitter />
+                <FaXTwitter />
               </button>
               <span className="absolute -top-7 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-2 rounded-lg border border-gray-300 bg-white py-1 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
                 Twitter<span></span>
@@ -77,7 +79,7 @@ const Navbar = () => {
           <div className="group relative">
             <a target="_blank" href="http://youtube.com/">
               <button className=" text-3xl text-red-600">
-              <FaYoutube />
+                <FaYoutube />
               </button>
               <span className="absolute -top-7 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-2 rounded-lg border border-gray-300 bg-white py-1 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
                 Youtube<span></span>
@@ -92,7 +94,11 @@ const Navbar = () => {
           খবর
         </button>
         <span className=" w-[93%] py-3">
-          <Marquee speed="40" pauseOnHover className=" text-gray-700 font-serif">
+          <Marquee
+            speed="40"
+            pauseOnHover
+            className=" text-gray-700 font-serif"
+          >
             সাইটের আপডেট এর কাজ চলমান রয়েছে। তার জন্য দুঃখ প্রকাশ করছি আমরা ||
             এ্যাপটাচ পলিটেকনিক ইনস্টিটিউট এর অফিসিয়াল ওয়েবসাইটে আপনাকে স্বাগতম |
           </Marquee>
@@ -244,7 +250,7 @@ const Navbar = () => {
                 onClick={(e) => e.preventDefault()}
                 className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
-               Academics
+                Academics
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16px"
@@ -275,10 +281,10 @@ const Navbar = () => {
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
-                    notice 
+                    notice
                   </NavLink>
-                  </li>
-                  <li id="aetive" className="uppercase border-b py-3">
+                </li>
+                <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
                     to="*"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
@@ -286,10 +292,10 @@ const Navbar = () => {
                     {" "}
                     online class
                   </NavLink>
-                  </li>
-                  <li id="aetive" className="uppercase border-b py-3">
+                </li>
+                <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/classRoutin"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
@@ -305,7 +311,7 @@ const Navbar = () => {
               <a
                 href="#"
                 onClick={(e) => e.preventDefault()}
-                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
+                className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px]  block uppercase nav-link"
               >
                 Database
                 <svg
@@ -322,19 +328,82 @@ const Navbar = () => {
                   />
                 </svg>
               </a>
-              <ul className="absolute top-7 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-green-500 max-h-0 overflow-hidden min-w-[250px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500">
-                <li id="aetive" className="uppercase border-b py-3">
+              <ul className="absolute top-7 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-green-500 max-h-0  min-w-[200px]  overflow-hidden hover:overflow-visible  group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500">
+                {/* studnet sub nevbar */}
+                <li
+                  id="active"
+                  className="relative uppercase border-b py-3"
+                  onMouseEnter={() => setIsSubmenuVisible(true)}
+                  onMouseLeave={() => setIsSubmenuVisible(false)}
+                >
                   <NavLink
-                    to="*"
+                    to="/"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
-                    {" "}
-                    student
+                    Student
                   </NavLink>
+                  {isSubmenuVisible && (
+                    <ul className="absolute lg:left-[150px] left-[100px] w-[180px]  lg:w-[220px] px-5 top-5 mt-2 bg-green-500  border border-gray-300 shadow-lg">
+                      <li id="aetive" className="uppercase border-b py-3">
+                        <NavLink
+                          to="database/firstSemister"
+                          className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
+                        >
+                          {" "}
+                          First semister
+                        </NavLink>
+                      </li>
+                      <li id="aetive" className="uppercase border-b py-3">
+                        <NavLink
+                          to="database/secondSemister"
+                          className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
+                        >
+                          {" "}
+                          Second semister
+                        </NavLink>
+                      </li>
+                      <li id="aetive" className="uppercase border-b py-3">
+                        <NavLink
+                          to="database/thirdSemister"
+                          className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
+                        >
+                          {" "}
+                          Third semister
+                        </NavLink>
+                      </li>
+                      <li id="aetive" className="uppercase border-b py-3">
+                        <NavLink
+                          to="database/fourSemister"
+                          className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
+                        >
+                          {" "}
+                          Four semister
+                        </NavLink>
+                      </li>
+                      <li id="aetive" className="uppercase border-b py-3">
+                        <NavLink
+                          to="*"
+                          className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
+                        >
+                          {" "}
+                          fifth semister
+                        </NavLink>
+                      </li>
+                      <li id="aetive" className="uppercase border-b py-3">
+                        <NavLink
+                          to="*"
+                          className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
+                        >
+                          {" "}
+                          sixth semister
+                        </NavLink>
+                      </li>
+                    </ul>
+                  )}
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/database/alTeacher"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
@@ -374,9 +443,6 @@ const Navbar = () => {
                   >
                     {" "}
                     Electrical
-                    {/* <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  className="ml-4 inline-block" viewBox="0 0 64 64">
-                                            <path d="M61.92 30.93a7.076 7.076 0 0 0-6.05-5.88 8.442 8.442 0 0 0-.87-.04V22A15.018 15.018 0 0 0 40 7H24A15.018 15.018 0 0 0 9 22v3.01a8.442 8.442 0 0 0-.87.04 7.076 7.076 0 0 0-6.05 5.88A6.95 6.95 0 0 0 7 38.7V52a3.009 3.009 0 0 0 3 3v6a1 1 0 0 0 1 1h3a1 1 0 0 0 .96-.73L16.75 55h30.5l1.79 6.27A1 1 0 0 0 50 62h3a1 1 0 0 0 1-1v-6a3.009 3.009 0 0 0 3-3V38.7a6.95 6.95 0 0 0 4.92-7.77ZM11 22A13.012 13.012 0 0 1 24 9h16a13.012 13.012 0 0 1 13 13v3.3a6.976 6.976 0 0 0-5 6.7v3.18a3 3 0 0 0-1-.18H17a3 3 0 0 0-1 .18V32a6.976 6.976 0 0 0-5-6.7Zm37 16v5H16v-5a1 1 0 0 1 1-1h30a1 1 0 0 1 1 1ZM13.25 60H12v-5h2.67ZM52 60h-1.25l-1.42-5H52Zm3.83-23.08a1.008 1.008 0 0 0-.83.99V52a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1V37.91a1.008 1.008 0 0 0-.83-.99 4.994 4.994 0 0 1 .2-9.88A4.442 4.442 0 0 1 9 27h.01a4.928 4.928 0 0 1 3.3 1.26A5.007 5.007 0 0 1 14 32v12a1 1 0 0 0 1 1h34a1 1 0 0 0 1-1V32a5.007 5.007 0 0 1 1.69-3.74 4.932 4.932 0 0 1 3.94-1.22 5.018 5.018 0 0 1 4.31 4.18v.01a4.974 4.974 0 0 1-4.11 5.69Z" data-original="#000000" />
-                                    </svg> */}
                   </NavLink>
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
@@ -417,7 +483,7 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/architechar"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
@@ -432,7 +498,7 @@ const Navbar = () => {
                 to="/gallery"
                 className="hover:text-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block uppercase nav-link"
               >
-                 gallery
+                gallery
               </NavLink>
             </li>
             <li id="aetive" className="max-lg:border-b max-lg:px-3 ">
@@ -443,7 +509,7 @@ const Navbar = () => {
                 Result
               </NavLink>
             </li>
-          
+
             <li id="aetive" className="max-lg:border-b max-lg:px-3 ">
               <NavLink
                 to="/contact"
@@ -452,7 +518,6 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
-          
           </ul>
         </div>
         {/* togol */}

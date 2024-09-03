@@ -13,6 +13,11 @@ import VicePrincipal from "../../pages/administration/vice_principale/VicePrinci
 import Civil from "../../pages/department/civil/Civil";
 import Mechanical from "../../pages/department/mechanical/Mechanical";
 import Electrical from "../../pages/department/electrical/Electrical";
+import Database from "../../pages/databasc/Database";
+import FristSemister from "../../pages/databasc/studentData/first_semister/FristSemister";
+import TeacherData from "../../pages/databasc/teacher_all/TeacherData";
+import Architechar from "../../pages/department/architechar/Architechar";
+import ClassRoutin from "../../pages/academics/ClassRoutin";
 
 
 const router = createBrowserRouter([
@@ -69,10 +74,49 @@ const router = createBrowserRouter([
           path:'electrical',
           element:<Electrical/>
         },
+        ,  
+        {
+          path:'architechar',
+          element:<Architechar/>
+        },
         // academics nav
         {
           path:"notice",
           element:<Notice/>
+        },
+        {
+          path:"classRoutin",
+          element:<ClassRoutin/>
+        },
+
+        // student database
+        {
+          path:'/database',
+          element:<Database/>,
+          children:[{
+            path:"firstSemister",
+            element:<FristSemister/>
+          },
+          {
+            path:"secondSemister",
+            element:<FristSemister/>
+          },
+          {
+            path:"thirdSemister",
+            element:<FristSemister/>
+          },
+          {
+            path:"fourSemister",
+            element:<FristSemister/>
+          },
+          // teacher
+          {
+            path:"alTeacher",
+            element:<TeacherData/>
+          }
+        
+        
+        ]
         }
       ]
     },
