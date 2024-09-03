@@ -17,6 +17,7 @@ import Database from "../../pages/databasc/Database";
 import FristSemister from "../../pages/databasc/studentData/first_semister/FristSemister";
 import TeacherData from "../../pages/databasc/teacher_all/TeacherData";
 import Architechar from "../../pages/department/architechar/Architechar";
+import ClassRoutin from "../../pages/academics/ClassRoutin";
 
 
 const router = createBrowserRouter([
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
         {
           path:"notice",
           element:<Notice/>
+        },
+        {
+          path:"classRoutin",
+          element:<ClassRoutin/>
         },
 
         // student database
