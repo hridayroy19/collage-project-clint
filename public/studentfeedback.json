@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Alice Johnson",
+        "image": "https://example.com/images/alice.jpg",
+        "feedback": "The session was well-organized and covered all the topics in detail. I particularly enjoyed the interactive exercises that made the concepts easier to grasp. However, I think more time could have been allocated for the Q&A section to address specific queries."
+    },
+    {
+        "id": 2,
+        "name": "Bob Smith",
+        "image": "https://example.com/images/bob.jpg",
+        "feedback": "The instructor was knowledgeable and explained the material clearly. The pacing was good, and I appreciated the practical examples provided. It would have been helpful to have more hands-on activities to reinforce the concepts, especially for beginners."
+    },
+    {
+        "id": 3,
+        "name": "Catherine Lee",
+        "image": "https://example.com/images/catherine.jpg",
+        "feedback": "I found the session to be very insightful. The content was relevant and up-to-date, which I appreciated. The only downside was the fast pace, which made it difficult to keep up with some of the more complex topics. A bit more time for review would be beneficial."
+    },
+    {
+        "id": 4,
+        "name": "David Kim",
+        "image": "https://example.com/images/david.jpg",
+        "feedback": "This session was exactly what I needed. The instructor did a fantastic job of breaking down complex topics into understandable chunks. The examples were highly relevant, making it easier to apply the knowledge in real-world scenarios. The only thing missing was more interactive exercises."
+    },
+    {
+        "id": 5,
+        "name": "Ella Martinez",
+        "image": "https://example.com/images/ella.jpg",
+        "feedback": "The session was good overall, but I felt that the pace was a bit too fast for beginners like myself. While the content was excellent, I think it could have been presented more slowly to ensure everyone was on the same page. A follow-up session might be helpful."
+    },
+    {
+        "id": 6,
+        "name": "Frank Williams",
+        "image": "https://example.com/images/frank.jpg",
+        "feedback": "A very informative session with well-structured content. The instructor was engaging and made complex topics understandable. I particularly liked the practical examples that were provided. However, I think the session could benefit from a little more time spent on real-world applications."
+    },
+    {
+        "id": 7,
+        "name": "Grace Brown",
+        "image": "https://example.com/images/grace.jpg",
+        "feedback": "The session was excellent, with clear and concise explanations. The instructor was very knowledgeable and made the material accessible. I appreciated the practical tips and tricks shared during the session. One suggestion would be to include more case studies to help contextualize the learning."
+    },
+    {
+        "id": 8,
+        "name": "Henry Davis",
+        "image": "https://example.com/images/henry.jpg",
+        "feedback": "Overall, the session was very helpful. The instructor was well-prepared and covered a lot of ground. The feedback from other participants was also valuable. I think more interactive elements, such as group discussions or breakout sessions, would have enhanced the learning experience even further."
+    },
+    {
+        "id": 9,
+        "name": "Isabella Moore",
+        "image": "https://example.com/images/isabella.jpg",
+        "feedback": "The session was engaging and informative. I learned a lot, especially from the real-life examples that were shared. However, some of the topics were a bit advanced for my current level of understanding. A separate session for beginners might be a good idea to cover the basics first."
+    },
+    {
+        "id": 10,
+        "name": "Jack Wilson",
+        "image": "https://example.com/images/jack.jpg",
+        "feedback": "I thoroughly enjoyed the session. The instructor was clear and concise, and the content was highly relevant to my work. The interactive exercises were particularly useful in reinforcing the material. My only suggestion would be to provide additional resources for further study after the session."
+    }
+]
