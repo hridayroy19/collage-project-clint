@@ -18,6 +18,7 @@ import FristSemister from "../../pages/databasc/studentData/first_semister/Frist
 import TeacherData from "../../pages/databasc/teacher_all/TeacherData";
 import Architechar from "../../pages/department/architechar/Architechar";
 import ClassRoutin from "../../pages/academics/ClassRoutin";
+import Instractor from "../../pages/administration/instractor/Instractor";
 
 
 const router = createBrowserRouter([
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
         {
           path:'deparmentHead/all',
           element:<DeparmnetHead/>
+        },
+        {
+          path:"instructor",
+          element:<Instractor/>
         },
 // all department path section
         {
