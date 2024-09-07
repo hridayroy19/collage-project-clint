@@ -19,6 +19,8 @@ import TeacherData from "../../pages/databasc/teacher_all/TeacherData";
 import Architechar from "../../pages/department/architechar/Architechar";
 import ClassRoutin from "../../pages/academics/ClassRoutin";
 import Instractor from "../../pages/administration/instractor/Instractor";
+import Employes from "../../pages/administration/employees/Employes";
+import BoardOfDirectcrs from "../../pages/administration/board_of_directcrs/BoardOfDirectcrs";
 
 
 const router = createBrowserRouter([
@@ -45,6 +47,10 @@ const router = createBrowserRouter([
         },
 // Adminstration
         {
+          path:'bordDirecters',
+          element:<BoardOfDirectcrs/>
+        },
+        {
           path:'principal',
           element:<Principal/>
         },
@@ -60,6 +66,10 @@ const router = createBrowserRouter([
         {
           path:"instructor",
           element:<Instractor/>
+        },
+        {
+          path:"employees",
+          element:<Employes/>
         },
 // all department path section
         {

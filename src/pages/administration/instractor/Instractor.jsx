@@ -9,8 +9,7 @@ const Instractor = () => {
       try {
         const response = await fetch("/data.json");
         const data = await response.json();
-        console.log(data);
-
+        // console.log(data);
         setTeacher(data);
       } catch (error) {
         console.log(error);
