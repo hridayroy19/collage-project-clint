@@ -187,10 +187,10 @@ const Navbar = () => {
               <ul className="absolute top-7 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-green-500 max-h-0 overflow-hidden min-w-[250px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500">
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/bordDirecters"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
-                    {" "}
+                    
                     board of directcrs
                   </NavLink>
                 </li>
@@ -223,7 +223,7 @@ const Navbar = () => {
                 </li>
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/employees"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
@@ -268,7 +268,7 @@ const Navbar = () => {
               <ul className="absolute top-7 max-lg:top-8 left-0 z-50 block space-y-2 shadow-lg bg-green-500 max-h-0 overflow-hidden min-w-[250px] group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-6 transition-all duration-500">
                 <li id="aetive" className="uppercase border-b py-3">
                   <NavLink
-                    to="*"
+                    to="/bordDirecters"
                     className="hover:text-[#007bff] hover:fill-[#007bff] text-gray-700 font-serif font-semibold text-[15px] block"
                   >
                     {" "}
