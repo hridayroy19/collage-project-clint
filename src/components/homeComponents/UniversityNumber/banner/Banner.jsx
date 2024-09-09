@@ -14,7 +14,7 @@ const Banner = () => {
   };
 
   return (
-    <div className=" w-full xl:mb-24 lg:mb-14 mb-5 ">
+    <div className=" w-full xl:mb-16 lg:mb-14 mb-5 ">
       <div>
         <div className="slider-container">
           <Slider {...settings}>
