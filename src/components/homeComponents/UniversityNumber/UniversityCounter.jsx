@@ -13,7 +13,7 @@ const UniversityCounter = () => {
       >
         <div className="flex items-center justify-center h-full py-8 md:py-16">
           <div className=" p-4 md:p-8 rounded-lg  w-full max-w-6xl">
-            <div className="grid gap-8 justify-center xl:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center text-black font-extrabold text-center">
+            <div className="grid gap-14 justify-center xl:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center text-black font-extrabold text-center">
               <div className="flex flex-col items-center border  bg-[#016c1877] py-3 text-white">
                 <div className="w-24  border rounded-full mb-2 overflow-hidden">
                   <img

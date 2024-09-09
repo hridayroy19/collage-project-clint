@@ -36,6 +36,7 @@ const Message = () => {
               <div className="card-body bg-slate-100 text-center">
                 <h2 className=" text-2xl font-serif "> {data?.name} </h2>
                 <p className=" text-green-500 font-serif"> {data?.status} </p>
+                {/* link add  */}
                 <div className=" flex justify-center text-3xl items-center gap-7">
                   <button className="  hover:text-green-500 hover:text-4xl  ">
                     <a href={data?.facebook} target="_blank">
