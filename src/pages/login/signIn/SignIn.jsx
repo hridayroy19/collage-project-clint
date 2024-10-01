@@ -3,6 +3,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import Lottie from "react-lottie";
 import okay from "../../../../public/contactAnimation.json";
 import { Link } from "react-router-dom";
+import { CiUser } from "react-icons/ci";
 
 const SignIn = () => {
   const defaultOptions = {
@@ -34,7 +35,7 @@ const SignIn = () => {
               <form className="card-body">
                 <div>
                   <label className="input input-bordered flex items-center gap-2">
-                    <MdOutlineMarkEmailUnread className="text-xl" />
+                    <CiUser className="text-xl" />
                     <input
                       type="text"
                       className="grow"
