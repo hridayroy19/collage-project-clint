@@ -20,7 +20,7 @@ const Signup = () => {
             <h1 className="text-green-500 lg:mt-14 mt-6 text-center font-extralight font-serif text-3xl">
               Welcome back
             </h1>
-            {/* from */}
+            {/* from section */}
 {/* 
             <div className="w-full mx-auto">
               <form className="card-body">
