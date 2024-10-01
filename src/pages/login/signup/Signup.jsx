@@ -1,47 +1,59 @@
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
+import { Link } from "react-router-dom";
+import animation from "../../../../public/loginanimation.json";
+import Lottie from "react-lottie";
 
 const Signup = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className="font-serif">
       <div className="bg-[#120a35e8] lg:h-screen md:h-screen flex justify-center items-center">
-        <div className="w-full lg:w-[800px] md:w-[700px] lg:h-[400px] shadow-2xl bg-[#10041681] flex flex-col lg:flex-row md:flex-row justify-center items-center">
+        <div className="w-full lg:w-[800px] md:w-[700px] lg:h-[420px] shadow-2xl bg-[#10041681] flex flex-col lg:flex-row md:flex-row justify-center items-center">
           {/* Image Section */}
-          <div className="w-full lg:w-[400px] flex justify-center lg:justify-start">
-            <img
-              src="/public/log.png"
-              className="w-[300px] md:w-full lg:w-[400px] md:border-e-2 h-auto object-contain"
-              alt=""
-              s
-            />
+          <div className="w-full lg:w-[400px] md:px-2 px-5 flex md:border-e-2 justify-center lg:justify-start">
+            <Lottie options={defaultOptions} width="100%" height="100%" />
           </div>
+
           {/* Form Section */}
-          <div className="w-full lg:w-[400px] px-6">
-            <h1 className="text-green-500 lg:mt-14 mt-6 text-center font-extralight font-serif text-3xl">
+          <div className="w-full lg:w-[380px] px-2">
+            <h1 className="text-green-500 lg:mt-8 mt-6 text-center font-extralight font-serif text-3xl">
               Welcome back
             </h1>
-            {/* from section */}
 
+            {/* Form section */}
             <div className="w-full mx-auto">
               <form className="card-body">
                 <div>
-                  <label className="input input-bordered flex items-center gap-2">
+                  <label htmlFor="email" className="input input-bordered flex items-center gap-2">
                     <MdOutlineMarkEmailUnread className=" text-xl" />
                     <input
-                      type="text"
+                      id="email"
+                      type="email"
                       className="grow"
-                      placeholder="Email Addrese "
+                      placeholder="Email Address"
+                      required
                     />
                   </label>
                 </div>
 
                 <div className=" mt-3">
-                  <label className="input input-bordered flex items-center gap-2">
+                  <label htmlFor="password" className="input input-bordered flex items-center gap-2">
                     <RiLockPasswordLine className=" text-xl" />
                     <input
-                      type="text"
+                      id="password"
+                      type="password"
                       className="grow"
-                      placeholder="Password "
+                      placeholder="Password"
+                      required
                     />
                   </label>
                 </div>
@@ -54,10 +66,12 @@ const Signup = () => {
 
                 <h1 className="text-white py-1 mt-2 ">
                   Don't have an account?
-                  <span className="ml-2 text-green-500">Signup</span>
+                  <span className="ml-2  text-green-500">
+                    <Link to={"/admin/signIn"}> Signup </Link>
+                  </span>
                 </h1>
               </form>
-            </div> 
+            </div>
           </div>
         </div>
       </div>

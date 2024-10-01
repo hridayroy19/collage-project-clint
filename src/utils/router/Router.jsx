@@ -22,6 +22,7 @@ import Instractor from "../../pages/administration/instractor/Instractor";
 import Employes from "../../pages/administration/employees/Employes";
 import BoardOfDirectcrs from "../../pages/administration/board_of_directcrs/BoardOfDirectcrs";
 import Signup from "../../pages/login/signup/Signup";
+import SignIn from "../../pages/login/signIn/SignIn";
 
 
 const router = createBrowserRouter([
@@ -138,8 +139,12 @@ const router = createBrowserRouter([
     },
     // login routes
     {
-      path:"/signup",
+      path:"/admin",
       element:<Signup/>
+    },
+    {
+      path:"/admin/signIn",
+      element:<SignIn/>
     }
   ]);
 
