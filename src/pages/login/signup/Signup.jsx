@@ -21,7 +21,7 @@ const Signup = () => {
               Welcome back
             </h1>
             {/* from section */}
-{/* 
+
             <div className="w-full mx-auto">
               <form className="card-body">
                 <div>
@@ -57,7 +57,7 @@ const Signup = () => {
                   <span className="ml-2 text-green-500">Signup</span>
                 </h1>
               </form>
-            </div> */}
+            </div> 
           </div>
         </div>
       </div>
