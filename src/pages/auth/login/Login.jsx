@@ -1,10 +1,10 @@
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import animation from "../../../../public/loginanimation.json";
+import animation from "../../../../public/contactAnimation.json";
 import Lottie from "react-lottie";
 
-const Signup = () => {
+const Login = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -79,4 +79,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Login;
