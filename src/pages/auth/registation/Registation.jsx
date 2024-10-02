@@ -1,11 +1,14 @@
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
 import Lottie from "react-lottie";
-import okay from "../../../../public/contactAnimation.json";
+import okay from "../../../../public/Computer.json";
 import { Link } from "react-router-dom";
 import { CiUser } from "react-icons/ci";
+import { useState } from "react";
+import { AiOutlineCheck } from "react-icons/ai";
+import { BiCircle } from "react-icons/bi";
 
-const SignIn = () => {
+const Registation = () => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -13,6 +16,37 @@ const SignIn = () => {
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
+  };
+
+  // validation state
+
+  const [lowercase, setLowercase] = useState(false);
+  const [lowerUpperAndLength, setLowerUpperAndLength] = useState(false);
+  const [numberAndSpecial, setNumberAndSpecial] = useState(false);
+
+  const handelChange = (value) => {
+    // regex
+    const lower = new RegExp("(?=.*[a-z])(?=.*[A-Z])");
+    const lowerUpperAndLength = new RegExp("^(?=.*[a-z])(?=.*[A-Z]).{8,}$");
+    const numberAndSpecial = new RegExp("(?=.*[0-9])(?=.*[!@#$%&*?/])");
+
+    if (lower.test(value)) {
+      setLowercase(true);
+    } else {
+      setLowercase(false);
+    }
+    // number spical
+    if (numberAndSpecial.test(value)) {
+      setNumberAndSpecial(true);
+    } else {
+      setNumberAndSpecial(false);
+    }
+    // 8 cartectar
+    if (lowerUpperAndLength.test(value)) {
+      setLowerUpperAndLength(true);
+    } else {
+      setLowerUpperAndLength(false);
+    }
   };
 
   return (
@@ -64,14 +98,49 @@ const SignIn = () => {
                       className="grow"
                       placeholder="Password"
                       required
+                      onChange={(e) => handelChange(e.target.value)}
                     />
                   </label>
                   {/* Password Strength Message */}
-                  <div className="mt-2 text-white text-sm">
+                  <div className="mt-2 bg-[#2f177234] px-2 py-2 font-thin text-white text-sm">
                     <p>Password must contain:</p>
-                    <p>- At least 8 characters</p>
-                    <p>- A mix of uppercase and lowercase letters</p>
-                    <p>- A number or special character</p>
+                    <div className=" flex items-center gap-1">
+                      {lowerUpperAndLength ? (
+                        <span>
+                          <AiOutlineCheck className="text-green-600 border-green-600 border rounded-lg text-xs" />{" "}
+                        </span>
+                      ) : (
+                        <span>
+                          <BiCircle className="text-green-600  text-xs" />{" "}
+                        </span>
+                      )}
+                      At least 8 characters
+                    </div>
+                    <div className=" flex items-center gap-1">
+                      {lowercase ? (
+                        <span>
+                          <AiOutlineCheck className="text-green-600 border-green-600 border rounded-lg text-xs" />{" "}
+                        </span>
+                      ) : (
+                        <span>
+                          <BiCircle className="text-green-600  text-xs" />{" "}
+                        </span>
+                      )}
+                      A mix of uppercase and lowercase letters
+                    </div>
+
+                    <div className=" flex items-center gap-1">
+                      {numberAndSpecial ? (
+                        <span>
+                          <AiOutlineCheck className="text-green-600 border-green-600 border rounded-lg text-xs" />{" "}
+                        </span>
+                      ) : (
+                        <span>
+                          <BiCircle className="text-green-600  text-xs" />{" "}
+                        </span>
+                      )}
+                      A number or special character
+                    </div>
                   </div>
                 </div>
 
@@ -94,4 +163,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default Registation;
