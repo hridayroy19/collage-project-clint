@@ -21,7 +21,8 @@ import ClassRoutin from "../../pages/academics/ClassRoutin";
 import Instractor from "../../pages/administration/instractor/Instractor";
 import Employes from "../../pages/administration/employees/Employes";
 import BoardOfDirectcrs from "../../pages/administration/board_of_directcrs/BoardOfDirectcrs";
-import Signup from "../../pages/login/signup/Signup";
+import Login from "../../pages/auth/login/Login";
+import Registation from "../../pages/auth/registation/Registation";
 
 
 const router = createBrowserRouter([
@@ -138,8 +139,12 @@ const router = createBrowserRouter([
     },
     // login routes
     {
-      path:"/signup",
-      element:<Signup/>
+      path:"/admin",
+      element:<Login/>
+    },
+    {
+      path:"/admin/signIn",
+      element:<Registation/>
     }
   ]);
 
