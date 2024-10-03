@@ -50,8 +50,8 @@ const Message = () => {
           </div>
         </div>
       </div>
-
-      <div className=" grid lg:grid-cols-3 gap-7 md:grid-cols-2 grid-cols-1 justify-center items-center ">
+{/* 
+ <div className=" grid lg:grid-cols-3 gap-7 md:grid-cols-2 grid-cols-1 justify-center items-center ">
         {employees?.map((data, id) => (
           <div key={id} className=" px-1 w-full  border-green-600 ">
             <div className="card rounded-md bg-white border-2  xl:w-[350px] lg:w-72 ">
@@ -66,7 +66,7 @@ const Message = () => {
                 <h2 className=" text-2xl font-serif "> {data?.name} </h2>
                 <p className=" text-green-500 font-serif"> {data?.status} </p>
                 {/* link add  */}
-                <div className=" flex justify-center text-3xl items-center gap-7">
+                {/* <div className=" flex justify-center text-3xl items-center gap-7">
                   <button className="  hover:text-green-500 hover:text-4xl  ">
                     <a href={data?.facebook} target="_blank">
                       <MdOutlineFacebook />
@@ -87,7 +87,9 @@ const Message = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
+
+     
     </div>
   );
 };
