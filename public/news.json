@@ -1,0 +1,48 @@
+[
+    {
+      "programName": "React Fundamentals",
+      "image": "https://example.com/react_fundamentals.jpg",
+      "date": "10th Oct 2024"
+    },
+    {
+      "programName": "Advanced React Patterns",
+      "image": "https://example.com/advanced_react_patterns.jpg",
+      "date": "12th Oct 2024"
+    },
+    {
+      "programName": "React Hooks Deep Dive",
+      "image": "https://example.com/react_hooks_deep_dive.jpg",
+      "date": "14th Oct 2024"
+    },
+    {
+      "programName": "State Management with Redux",
+      "image": "https://example.com/redux_state_management.jpg",
+      "date": "16th Oct 2024"
+    },
+    {
+      "programName": "React with TypeScript",
+      "image": "https://example.com/react_typescript.jpg",
+      "date": "18th Oct 2024"
+    },
+    {
+      "programName": "Performance Optimization in React",
+      "image": "https://example.com/react_performance_optimization.jpg",
+      "date": "20th Oct 2024"
+    },
+    {
+      "programName": "Testing React Applications",
+      "image": "https://example.com/testing_react_apps.jpg",
+      "date": "22nd Oct 2024"
+    },
+    {
+      "programName": "React Native for Mobile Development",
+      "image": "https://example.com/react_native_mobile.jpg",
+      "date": "24th Oct 2024"
+    },
+    {
+      "programName": "Fullstack Development with React and Node.js",
+      "image": "https://example.com/fullstack_react_node.jpg",
+      "date": "26th Oct 2024"
+    }
+  ]
+  

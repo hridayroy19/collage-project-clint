@@ -23,129 +23,133 @@ import Employes from "../../pages/administration/employees/Employes";
 import BoardOfDirectcrs from "../../pages/administration/board_of_directcrs/BoardOfDirectcrs";
 import Login from "../../pages/auth/login/Login";
 import Registation from "../../pages/auth/registation/Registation";
-
+import NewsAll from "../../pages/allNews/news/NewsAll";
 
 const router = createBrowserRouter([
-    {
-      path: "/",
-      element:<LayOut/>,
-      errorElement:<Error/>,
-      children:[
-        {
-          path:'/',
-          element:<Home/>
-        },
-        {
-          path:'contact',
-          element:<Contact/>
-        }  ,    
-        {
-          path:'gallery',
-          element:<Gallery/>
-        },
-        {
-          path:'result',
-          element:<Result/>
-        },
-// Adminstration
-        {
-          path:'bordDirecters',
-          element:<BoardOfDirectcrs/>
-        },
-        {
-          path:'principal',
-          element:<Principal/>
-        },
-        {
-          path:'viceprincipal',
-          element:<VicePrincipal/>
-        },
-        ,
-        {
-          path:'deparmentHead/all',
-          element:<DeparmnetHead/>
-        },
-        {
-          path:"instructor",
-          element:<Instractor/>
-        },
-        {
-          path:"employees",
-          element:<Employes/>
-        },
-// all department path section
-        {
-          path:'civil',
-          element:<Civil/>
-        },
-        {
-          path:'computerDept',
-          element:<ComputerDepartment/>
-        },  
-        {
-          path:'mechanical',
-          element:<Mechanical/>
-        },
-        ,  
-        {
-          path:'electrical',
-          element:<Electrical/>
-        },
-        ,  
-        {
-          path:'architechar',
-          element:<Architechar/>
-        },
-        // academics nav
-        {
-          path:"notice",
-          element:<Notice/>
-        },
-        {
-          path:"classRoutin",
-          element:<ClassRoutin/>
-        },
+  {
+    path: "/",
+    element: <LayOut />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "gallery",
+        element: <Gallery />,
+      },
+      {
+        path: "result",
+        element: <Result />,
+      },
+      // Adminstration
+      {
+        path: "bordDirecters",
+        element: <BoardOfDirectcrs />,
+      },
+      {
+        path: "principal",
+        element: <Principal />,
+      },
+      {
+        path: "viceprincipal",
+        element: <VicePrincipal />,
+      },
+      ,
+      {
+        path: "deparmentHead/all",
+        element: <DeparmnetHead />,
+      },
+      {
+        path: "instructor",
+        element: <Instractor />,
+      },
+      {
+        path: "employees",
+        element: <Employes />,
+      },
+      // all department path section
+      {
+        path: "civil",
+        element: <Civil />,
+      },
+      {
+        path: "computerDept",
+        element: <ComputerDepartment />,
+      },
+      {
+        path: "mechanical",
+        element: <Mechanical />,
+      },
+      ,
+      {
+        path: "electrical",
+        element: <Electrical />,
+      },
+      ,
+      {
+        path: "architechar",
+        element: <Architechar />,
+      },
+      // academics nav
+      {
+        path: "notice",
+        element: <Notice />,
+      },
+      {
+        path: "classRoutin",
+        element: <ClassRoutin />,
+      },
+      // All News Sction
+      {
+         path:"/news",
+         element:<NewsAll/>
+      },
 
-        // student database
-        {
-          path:'/database',
-          element:<Database/>,
-          children:[{
-            path:"firstSemister",
-            element:<FristSemister/>
+      // student database
+      {
+        path: "/database",
+        element: <Database />,
+        children: [
+          {
+            path: "firstSemister",
+            element: <FristSemister />,
           },
           {
-            path:"secondSemister",
-            element:<FristSemister/>
+            path: "secondSemister",
+            element: <FristSemister />,
           },
           {
-            path:"thirdSemister",
-            element:<FristSemister/>
+            path: "thirdSemister",
+            element: <FristSemister />,
           },
           {
-            path:"fourSemister",
-            element:<FristSemister/>
+            path: "fourSemister",
+            element: <FristSemister />,
           },
           // teacher
           {
-            path:"alTeacher",
-            element:<TeacherData/>
-          }
-        
-        
-        ]
-        }
-      ]
-    },
-    // login routes
-    {
-      path:"/admin",
-      element:<Login/>
-    },
-    {
-      path:"/admin/signIn",
-      element:<Registation/>
-    }
-  ]);
+            path: "alTeacher",
+            element: <TeacherData />,
+          },
+        ],
+      },
+    ],
+  },
+  // login routes
+  {
+    path: "/admin",
+    element: <Login />,
+  },
+  {
+    path: "/admin/signIn",
+    element: <Registation />,
+  },
+]);
 
-  export default router;
+export default router;
