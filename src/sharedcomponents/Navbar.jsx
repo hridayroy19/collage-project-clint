@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./Style.css";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { IoKey } from "react-icons/io5";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,6 +49,9 @@ const Navbar = () => {
         </Link>
         <div className="lg:absolute lg:right-10 flex items-center ml-auto space-x-1">
           {/* /* Socal Icon */}
+          <Link to={"/admin"}>       
+          <h1 className=" border flex items-center text-xs px-1 py-2 font-serif  rounded-sm font-bold hover:bg-green-500 hover:translate-x-1 "> <span><IoKey /></span> Api login</h1>
+          </Link>
           <div className="group relative">
             <a
               href="https://www.facebook.com/"

@@ -1,4 +1,5 @@
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 const LatestNews = () => {
   return (
@@ -8,9 +9,11 @@ const LatestNews = () => {
           <h3 className="text-2xl text-green-500 font-serif md:text-2xl font-thin">
             LATEST NEWS <span className="font-bold"> |</span>
           </h3>
-          <span className="text-sm flex items-center gap-3 md:text-base">
-            VIEW ALL NEWS <GoArrowRight />{" "}
-          </span>
+          <Link to={"/news"}>
+            <span className="text-sm underline  hover:cursor-pointer flex items-center gap-3 md:text-base">
+              VIEW ALL NEWS <GoArrowRight />
+            </span>
+          </Link>
         </div>
       </div>
       {/* fast card section */}
