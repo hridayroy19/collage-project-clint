@@ -24,7 +24,32 @@ const NewsAll = () => {
         <h4 className=" text-xl"> Letes News</h4>
         <p className="  px-2 font-bold bg-green-400 py-1">Refresh </p>
       </div>
+
       {/* filter section */}
+      <div>
+        <div className=" flex mt-5  items-center md:gap-7 gap-3">
+          <input
+            type="text"
+            placeholder="Type here News title"
+            className=" py-[4px] px-2 hover:border-green-500  border md:w-[200px] w-[150px] "
+          />
+          <input type="date" className=" py-[4px] px-1 border" />
+          <div className=" md:flex hidden ">
+            <button className=" hover:border px-4 bg-green-400 py-[4px] rounded-sm font-medium ">
+              {" "}
+              Search{" "}
+            </button>
+          </div>
+        </div>
+        <div className=" flex mt-4 md:hidden ">
+          <button className=" hover:border px-4 bg-green-400 py-[4px] rounded-sm font-medium ">
+            {" "}
+            Search{" "}
+          </button>
+        </div>
+      </div>
+
+      {/* card section */}
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-7 gap-3 mt-10">
         {news?.map((data, index) => (
           <div
