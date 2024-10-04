@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const NewsAll = () => {
   const [news, setNews] = useState([]);
-//   console.log(news);
+  //   console.log(news);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,17 +19,17 @@ const NewsAll = () => {
   }, []);
 
   return (
-    <div className=" py-16 w-full font-serif  text-[#112A46] bg-[#FFF7F7] lg:px-10 xl:px-16 px-5 2xl:w-[1440px] 2xl:mx-auto overflow-x-hidden">
+    <div className=" py-16 w-full font-serif  text-[#112A46] bg-[#FFF7F7] lg:px-10 xl:px-16 px-3 2xl:w-[1440px] 2xl:mx-auto overflow-x-hidden">
       <div className=" bg-green-200 flex items-center justify-between text-black py-2 px-3">
         <h4 className=" text-xl"> Letes News</h4>
         <p className="  px-2 font-bold bg-green-400 py-1">Refresh </p>
       </div>
       {/* filter section */}
-      <div className=" grid grid-cols-3 gap-7 mt-10">
+      <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-7 gap-3 mt-10">
         {news?.map((data, index) => (
           <div
             key={index}
-            className=" w-[370px] rounded-lg border shadow transition hover:shadow-lg"
+            className=" xl:w-[370px] lg:w-[304px] md:w-[340px] rounded-lg border shadow transition hover:shadow-lg"
           >
             <img
               alt=""
