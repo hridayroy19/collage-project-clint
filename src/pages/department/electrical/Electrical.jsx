@@ -101,15 +101,6 @@ const Electrical = () => {
           {/* Lab facilities */}
           <div className=" mt-6">
             <h3 className=" text-3xl font-bold mb-5">Lab facilitie</h3>
-            {/* <ul className="text-black text-xl">
-              <li>Wonkshop I (Foundry and Welding) Lab</li>
-              <li className=" mt-1 mb-1">
-                Workshop II (Lathe, Drilling & Shaping) Lab
-              </li>
-              <li> Workshop III (Special Machines)</li>
-              <li>CNC M/C Lab</li>
-              <li>Automation & Process Control Lab</li>
-            </ul> */}
           </div>
         </div>
         {/* secton div */}
