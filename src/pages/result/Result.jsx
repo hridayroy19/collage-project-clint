@@ -15,19 +15,19 @@ const Result = () => {
   };
 
   return (
-    <div className="  xl:px-20 lg:px-8 px-2">
+    <div className="  xl:px-20 lg:px-8 mt-5 px-2">
       <div className="  lg:flex md:flex flex-row  px-4 justify-between text-clip items-center ">
         {/* banner */}
 
         <div
-          className="w-[300px] lg:w-[340px] xl:w-[450px] md:w-[680px] h-[280px] lg:h-[500px] mt-8 lg-mt-0"
+          className="w-[300px] lg:w-[340px] xl:w-[450px] md:w-[680px] h-[280px] lg:h-[400px] mt-8 lg-mt-0"
           style={lottieContainerStyle}
         >
           <Lottie options={defaultOptions} />
         </div>
         {/* result from */}
         <div className=" w-full lg:w-[400px] py-4   ">
-          <h2 className=" text-4xl text-center  font-bold">
+          <h2 className=" text-4xl text-center mb-4 font-bold">
             Individual Results
           </h2>
           <div className=" rounded-lg bg-slate-100 shadow-md mt-5 px-7 py-6">
