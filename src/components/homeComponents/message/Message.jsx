@@ -39,12 +39,12 @@ const Message = () => {
           </div>
           <div className=" px-2 py-2 ">
             <img
-              src="https://i.ibb.co.com/rFSYnXb/20230409234326-IMG-7354-removebg-removebg-preview.png"
+              src="https://i.ibb.co.com/5n0bT9h/48b22b23787b02f0a82df4920f07728a-removebg-preview.png"
               className="  lg:w-[230px] w-[310px] flex mx-auto justify-center items-center shadow-xl "
               alt=""
             />
-            <h1 className=" font-serif mt-3 text-center mb-1">
-              Professor Niaz Ahmed Khan
+            <h1 className=" font-serif mt-3 uppercase text-center mb-1">
+              Professor NEROJA SHAPLA
             </h1>
             <h3 className=" font-serif text-center ">Vice Chancellor</h3>
           </div>

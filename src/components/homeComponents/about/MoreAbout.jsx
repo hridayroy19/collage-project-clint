@@ -14,7 +14,7 @@ const MoreAbout = () => {
           জনপ্রিয় কোর্স পরিচালনার লক্ষ্যেই এই প্রতিষ্ঠানের জন্ম হয়।
         </p>
         {/* main  dv */}
-        <div className="flex md:flex-row lg:flex-row flex-col-reverse   justify-between mt-10">
+        <div className="flex md:flex-row lg:flex-row flex-col-reverse   justify-between lg:mt-10 mt-5">
           <div className=" md:px-3 w-full">
             <p>
               এ্যাপটাচ পলিটেকনিক ইনস্টিটিউট, দিনাজপুর। যা বাংলাদেশ কারিগরি
