@@ -24,6 +24,7 @@ import BoardOfDirectcrs from "../../pages/administration/board_of_directcrs/Boar
 import Login from "../../pages/auth/login/Login";
 import Registation from "../../pages/auth/registation/Registation";
 import NewsAll from "../../pages/allNews/news/NewsAll";
+import MoreAbout from "../../components/homeComponents/about/MoreAbout";
 
 const router = createBrowserRouter([
   {
@@ -105,10 +106,14 @@ const router = createBrowserRouter([
         path: "classRoutin",
         element: <ClassRoutin />,
       },
-      // All News Sction
+      // All HOme  Sction another page link
       {
          path:"/news",
          element:<NewsAll/>
+      },
+      {
+        path:"/about",
+        element:<MoreAbout/>
       },
 
       // student database

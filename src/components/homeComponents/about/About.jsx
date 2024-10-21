@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class About extends Component {
   render() {
@@ -45,9 +46,9 @@ export class About extends Component {
                 quod natus tenetur inventore dignissimos doloremque sequi
                 laboriosam
               </p>
-              <button className="flex mx-auto relative -top-1 -left-1 bg-green-600 py-2.5 px-5 font-medium uppercase text-[#0c233ffd] transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
+              <Link to={"/about"}><button className="flex mx-auto relative -top-1 -left-1 bg-green-600 py-2.5 px-5 font-medium uppercase text-[#0c233ffd] transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
                 READ MORE
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
