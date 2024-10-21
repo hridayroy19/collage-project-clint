@@ -6,16 +6,16 @@ const MoreAbout = () => {
       <h2 className=" text-center text-2xl text-green-500 font-serif">
         Welcome to Aptouch Polytechnic Institute
       </h2>
-      <div className=" border  mt-16 py-4 px-4">
+      <div className=" border  mt-16 md:py-4 py-2 md:px-4 px-2">
         <p className="">
           এ্যাপটাচ পলিটেকনিক ইনস্টিটিউট, দিনাজপুর। যা বাংলাদেশ কারিগরি শিক্ষা
           বোর্ড, ঢাকা কর্তৃক অনুমোদিত ও নিয়ন্ত্রিত। প্রধানতঃ বিভিন্ন ডিগ্রি,
           ডিপ্লোমা ও কারিগরি শিক্ষায় দক্ষ জনবল তৈরী সহ অন্যান্য প্রয়োজনীয় ও
           জনপ্রিয় কোর্স পরিচালনার লক্ষ্যেই এই প্রতিষ্ঠানের জন্ম হয়।
         </p>
-        {/* image dv */}
-        <div className="flex  justify-between mt-10">
-          <div className="  px-5 w-full ">
+        {/* main  dv */}
+        <div className="flex md:flex-row lg:flex-row flex-col-reverse   justify-between mt-10">
+          <div className=" md:px-3 w-full">
             <p>
               এ্যাপটাচ পলিটেকনিক ইনস্টিটিউট, দিনাজপুর। যা বাংলাদেশ কারিগরি
               শিক্ষা বোর্ড, ঢাকা কর্তৃক অনুমোদিত ও নিয়ন্ত্রিত। প্রধানতঃ বিভিন্ন
@@ -30,31 +30,30 @@ const MoreAbout = () => {
               পলিটেকনিক হিসেবে মাথা উঁচু করে দাড়িয়ে থাকার দৃঢ় প্রত্যাশা করেছে।
             </p>
 
-            <div className=" mt-10 flex">
-              <div>
+            <div className=" mt-10 justify-between gap-1 flex md:flex-col lg:flex-row flex-col-reverse ">
+              <div className="lg:w-[87%] w-full">
                 <p>
                   এ্যাপটাচ পলিটেকনিক ইনস্টিটিউট, দিনাজপুর। যা বাংলাদেশ কারিগরি
                   শিক্ষা বোর্ড, ঢাকা কর্তৃক অনুমোদিত ও নিয়ন্ত্রিত। প্রধানতঃ
                   বিভিন্ন ডিগ্রি, ডিপ্লোমা ও কারিগরি শিক্ষায় দক্ষ জনবল তৈরী সহ
                   অন্যান্য প্রয়োজনীয় ও জনপ্রিয় কোর্স পরিচালনার লক্ষ্যেই এই
                   প্রতিষ্ঠানের জন্ম হয়।
+                  ইঞ্জিনিয়ারিং  শিক্ষার মধ্যস্তর হলো ডিপ্লোমা ইঞ্জিনিয়ারিং। এ স্তরের লক্ষ্য হল তাত্বিক ও ব্যবহারিক ভাবে সমান দক্ষতা অর্জন করা। তাই এস.এস.সি পাশ করা মেধাবি ছাত্র-ছাত্রীদের কোনরূপ ঝুঁকি না নিয়ে আগে ভাগেই ডিপ্লোমা প্রকৌশলে ভর্তি হওয়া অত্যন্ত যুক্তিসংগত। 
                 </p>
               </div>
               <div>
-                {" "}
                 <img
                   src="https://i.ibb.co.com/RDYzPt8/f2c0938edfcec05f1de26c03c2a903ff-1.jpg"
-                  className=" w-[1050px] h-[270px] object-cover "
+                  className=" h-[270px] object-cover "
                   alt=""
                 />
               </div>
             </div>
           </div>
           <div>
-            {" "}
             <img
               src="https://i.ibb.co.com/RDYzPt8/f2c0938edfcec05f1de26c03c2a903ff-1.jpg"
-              className=" w-[550px] object-cover h-[430px] "
+              className=" lg:w-[500px] object-cover lg:h-[300px] md:h-[350px] "
               alt=""
             />
           </div>
