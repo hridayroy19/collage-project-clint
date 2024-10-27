@@ -1,4 +1,31 @@
+import { useEffect, useState } from "react";
+
 const FristSemister = () => {
+  const [student, setStudent] = useState([]);
+  const [seacrch, setSearch] = useState("");
+  // console.log(student);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/studentData.json");
+        const data = await response.json();
+        setStudent(data);
+      } catch (error) {
+        console.log(error, "fetch data error");
+      }
+    };
+    fetchData(); // Call the fetchData function
+  }, []);
+
+  // filter studnet data base
+
+  const filterStudent = student.filter(
+    (student) =>
+      student.name.toLowerCase().includes(seacrch.toLocaleLowerCase()) ||
+      student.boardRoll.toLowerCase().includes(seacrch.toLowerCase())
+  );
+
   return (
     <div className=" mb-16 py-10 ">
       <div>
@@ -21,8 +48,9 @@ const FristSemister = () => {
               <label className=" border">
                 <input
                   type="text"
+                  onChange={(e) => setSearch(e.target.value)}
                   className=" lg:w-[150px] w-[100px] px-4 py-2 rounded-md"
-                  placeholder="Search"
+                  placeholder="Name / Roll"
                 />
               </label>
             </div>
@@ -32,88 +60,68 @@ const FristSemister = () => {
         {/* tabil  */}
         <div className=" mt-8">
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
-              <thead className="ltr:text-left rtl:text-right">
-                <tr className="text-start">
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Si No
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Name
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    Father Name
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {" "}
-                    Department
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {" "}
-                    Bord Role
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {" "}
-                    Reg No
-                  </th>
-                  <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
-                    {" "}
-                    Sesion
-                  </th>
-                </tr>
-              </thead>
+            <form action="">
+              <table className="min-w-full divide-y-2 divide-gray-200 bg-white text-sm">
+                <thead className="ltr:text-left rtl:text-right">
+                  <tr className="text-start">
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      Si No
+                    </th>
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      Name
+                    </th>
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      Father Name
+                    </th>
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      {" "}
+                      Department
+                    </th>
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      {" "}
+                      Bord Role
+                    </th>
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      {" "}
+                      Reg No
+                    </th>
+                    <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
+                      {" "}
+                      Session
+                    </th>
+                  </tr>
+                </thead>
 
-              <tbody className="divide-y  divide-gray-200">
-                <tr>
-                  <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
-                    1{" "}
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
-                    John hassan Doe
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
-                    John khel{" "}
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    computer
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    {" "}
-                    552464{" "}
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    124584545
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    2020-2021
-                  </td>
-                </tr>
-                <tr>
-                  <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
-                    1{" "}
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
-                    John Doe
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
-                    John khel{" "}
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    computer
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    {" "}
-                    552464{" "}
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    124584545
-                  </td>
-                  <td className="whitespace-nowrap px-12 py-2 text-gray-700">
-                    2020-2021
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                {/* maping section */}
+                {filterStudent?.map((student) => (
+                  <tbody key={student.id} className="divide-y  divide-gray-200">
+                    <tr>
+                      <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
+                        1{" "}
+                      </td>
+                      <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
+                        {student?.name}
+                      </td>
+                      <td className="whitespace-nowrap px-12 py-2 font-medium text-gray-900">
+                        John khel{" "}
+                      </td>
+                      <td className="whitespace-nowrap px-12 py-2 text-gray-700">
+                        computer
+                      </td>
+                      <td className="whitespace-nowrap px-12 py-2 text-gray-700">
+                        {student.boardRoll}
+                      </td>
+                      <td className="whitespace-nowrap px-12 py-2 text-gray-700">
+                        {student.reg}
+                      </td>
+                      <td className="whitespace-nowrap px-12 py-2 text-gray-700">
+                        2020-2021
+                      </td>
+                    </tr>
+                  </tbody>
+                ))}
+              </table>
+            </form>
           </div>
         </div>
       </div>

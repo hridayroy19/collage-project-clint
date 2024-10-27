@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "fatherName": "Michael Doe",
+        "department": "Computer Science",
+        "boardRoll": "CS202301",
+        "reg": "R202301",
+        "session": "2023-2024"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "fatherName": "Robert Smith",
+        "department": "Electrical Engineering",
+        "boardRoll": "EE202302",
+        "reg": "R202302",
+        "session": "2023-2024"
+    },
+    {
+        "id": 3,
+        "name": "Alex Brown",
+        "fatherName": "Henry Brown",
+        "department": "Mechanical Engineering",
+        "boardRoll": "ME202303",
+        "reg": "R202303",
+        "session": "2023-2024"
+    },
+    {
+        "id": 4,
+        "name": "Emily White",
+        "fatherName": "James White",
+        "department": "Civil Engineering",
+        "boardRoll": "CE202304",
+        "reg": "R202304",
+        "session": "2023-2024"
+    },
+    {
+        "id": 5,
+        "name": "Chris Green",
+        "fatherName": "William Green",
+        "department": "Computer Science",
+        "boardRoll": "CS202305",
+        "reg": "R202305",
+        "session": "2023-2024"
+    },
+    {
+        "id": 6,
+        "name": "Sarah Blue",
+        "fatherName": "Thomas Blue",
+        "department": "Electrical Engineering",
+        "boardRoll": "EE202306",
+        "reg": "R202306",
+        "session": "2023-2024"
+    },
+    {
+        "id": 7,
+        "name": "David Black",
+        "fatherName": "Richard Black",
+        "department": "Mechanical Engineering",
+        "boardRoll": "ME202307",
+        "reg": "R202307",
+        "session": "2023-2024"
+    },
+    {
+        "id": 8,
+        "name": "Laura Grey",
+        "fatherName": "Edward Grey",
+        "department": "Civil Engineering",
+        "boardRoll": "CE202308",
+        "reg": "R202308",
+        "session": "2023-2024"
+    },
+    {
+        "id": 9,
+        "name": "Kevin Yellow",
+        "fatherName": "George Yellow",
+        "department": "Computer Science",
+        "boardRoll": "CS202309",
+        "reg": "R202309",
+        "session": "2023-2024"
+    },
+    {
+        "id": 10,
+        "name": "Alice Red",
+        "fatherName": "David Red",
+        "department": "Electrical Engineering",
+        "boardRoll": "EE202310",
+        "reg": "R202310",
+        "session": "2023-2024"
+    }
+]
