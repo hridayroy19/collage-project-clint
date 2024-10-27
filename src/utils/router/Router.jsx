@@ -25,6 +25,7 @@ import Login from "../../pages/auth/login/Login";
 import Registation from "../../pages/auth/registation/Registation";
 import NewsAll from "../../pages/allNews/news/NewsAll";
 import MoreAbout from "../../components/homeComponents/about/MoreAbout";
+import OnlineClass from "../../pages/academics/OnlineClass";
 
 const router = createBrowserRouter([
   {
@@ -105,6 +106,10 @@ const router = createBrowserRouter([
       {
         path: "classRoutin",
         element: <ClassRoutin />,
+      },
+      {
+        path: "onlineClass",
+        element: <OnlineClass/>,
       },
       // All HOme  Sction another page link
       {
